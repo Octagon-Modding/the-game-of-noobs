@@ -1,5 +1,5 @@
 {
-  "_fv": 33,
+  "_fv": 34,
   "_type": "biome",
   "definition": {
     "name": "Noob Bio",
@@ -32,7 +32,6 @@
     "moodSoundDelay": 0,
     "spawnParticles": false,
     "particlesProbability": 0.0,
-    "biomeCategory": "NONE",
     "rainingPossibility": 1.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
@@ -41,7 +40,6 @@
     "spawnBiomeNether": false,
     "spawnInCaves": false,
     "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
     "grassPerChunk": 1,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 1,
