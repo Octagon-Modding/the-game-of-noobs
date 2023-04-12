@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "noob:block/dirt_slab"
+    },
+    "type=top": {
+      "model": "noob:block/dirt_slab_top"
+    },
+    "type=double": {
+      "model": "noob:block/dirt_slab_full"
+    }
+  }
+}
