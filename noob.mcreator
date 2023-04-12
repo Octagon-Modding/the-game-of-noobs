@@ -581,7 +581,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_wood",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtLog",
@@ -590,7 +590,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_log",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPlanks",
@@ -599,7 +599,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_planks",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtLeaves",
@@ -608,7 +608,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_leaves",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtStairs",
@@ -617,7 +617,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_stairs",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtSlab",
@@ -626,7 +626,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_slab",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFence",
@@ -635,7 +635,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_fence",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFenceGate",
@@ -644,7 +644,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_fence_gate",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPressurePlate",
@@ -653,7 +653,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_pressure_plate",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtButton",
@@ -662,7 +662,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_button",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtItemsTag",
@@ -671,7 +671,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_items_tag",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtWoodRecipe",
@@ -680,7 +680,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_wood_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPlanksRecipe",
@@ -689,7 +689,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_planks_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtStairsRecipe",
@@ -698,7 +698,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_stairs_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtSlabRecipe",
@@ -707,7 +707,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_slab_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFenceRecipe",
@@ -716,7 +716,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_fence_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFenceGateRecipe",
@@ -725,7 +725,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_fence_gate_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPressurePlateRecipe",
@@ -734,7 +734,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_pressure_plate_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtButtonRecipe",
@@ -743,7 +743,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_button_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtStickRecipe",
@@ -752,7 +752,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_stick_recipe",
-      "path": "~/dirt_wood"
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "NoobWood",
@@ -761,7 +761,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_wood",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobLog",
@@ -770,7 +770,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_log",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPlanks",
@@ -779,7 +779,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_planks",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobLeaves",
@@ -788,7 +788,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_leaves",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobStairs",
@@ -797,7 +797,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_stairs",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobSlab",
@@ -806,7 +806,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_slab",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFence",
@@ -815,7 +815,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_fence",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFenceGate",
@@ -824,7 +824,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_fence_gate",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPressurePlate",
@@ -833,7 +833,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_pressure_plate",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobButton",
@@ -842,7 +842,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_button",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobItemsTag",
@@ -851,7 +851,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_items_tag",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobWoodRecipe",
@@ -860,7 +860,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_wood_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPlanksRecipe",
@@ -869,7 +869,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_planks_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobStairsRecipe",
@@ -878,7 +878,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_stairs_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobSlabRecipe",
@@ -887,7 +887,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_slab_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFenceRecipe",
@@ -896,7 +896,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_fence_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFenceGateRecipe",
@@ -905,7 +905,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_fence_gate_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPressurePlateRecipe",
@@ -914,7 +914,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_pressure_plate_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobButtonRecipe",
@@ -923,7 +923,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_button_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobStickRecipe",
@@ -932,7 +932,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "noob_stick_recipe",
-      "path": "~/noob_wood"
+      "path": "~/blocks/noob_wood"
     }
   ],
   "variable_elements": [
@@ -952,8 +952,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.noob.noob_armor_leggings": "Noob Leggings",
       "block.noob.noob_button": "Noob Button",
+      "item.noob.noob_armor_leggings": "Noob Leggings",
       "block.noob.dirt_log": "Dirt Log",
       "item.noob.mudpickaxe": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
@@ -1049,6 +1049,14 @@
           {
             "name": "noob_ore",
             "children": []
+          },
+          {
+            "name": "dirt_wood",
+            "children": []
+          },
+          {
+            "name": "noob_wood",
+            "children": []
           }
         ]
       },
@@ -1093,26 +1101,20 @@
       {
         "name": "entities",
         "children": []
-      },
-      {
-        "name": "dirt_wood",
-        "children": []
-      },
-      {
-        "name": "noob_wood",
-        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "noob",
     "modName": "The Game of Noobs",
-    "version": "1.3",
+    "version": "1.4.0",
     "description": "The mod for noobs. DO NOT USE IF YOU ARE A PRO",
     "author": "AwesomeKalin55, AwesomeFootball 123",
     "websiteURL": "https://github.com/AwesomeKalin/the-game-of-noobs",
-    "disableForgeVersionCheck": true,
+    "license": "Not specified",
+    "disableForgeVersionCheck": false,
     "serverSideOnly": false,
+    "updateURL": "https://update.awesomekalin.eu.org/noob.json",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
