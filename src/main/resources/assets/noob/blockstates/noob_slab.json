@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "noob:block/noob_slab"
+    },
+    "type=top": {
+      "model": "noob:block/noob_slab_top"
+    },
+    "type=double": {
+      "model": "noob:block/noob_slab_full"
+    }
+  }
+}
