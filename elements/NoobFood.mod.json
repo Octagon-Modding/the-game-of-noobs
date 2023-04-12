@@ -15,6 +15,9 @@
     "nutritionalValue": 1,
     "saturation": 0.0,
     "eatingSpeed": 32,
+    "resultItem": {
+      "value": ""
+    },
     "forDogs": false,
     "isAlwaysEdible": false,
     "animation": "drink",
