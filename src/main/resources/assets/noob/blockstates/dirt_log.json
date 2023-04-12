@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "noob:block/dirt_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "noob:block/dirt_log"
+    },
+    "axis=z": {
+      "model": "noob:block/dirt_log",
+      "x": 90
+    }
+  }
+}

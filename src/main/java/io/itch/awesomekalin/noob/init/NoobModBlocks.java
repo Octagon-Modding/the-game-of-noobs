@@ -13,10 +13,30 @@ import net.minecraft.world.level.block.Block;
 import java.util.List;
 import java.util.ArrayList;
 
+import io.itch.awesomekalin.noob.block.NoobWoodBlock;
+import io.itch.awesomekalin.noob.block.NoobStairsBlock;
+import io.itch.awesomekalin.noob.block.NoobSlabBlock;
+import io.itch.awesomekalin.noob.block.NoobPressurePlateBlock;
+import io.itch.awesomekalin.noob.block.NoobPlanksBlock;
 import io.itch.awesomekalin.noob.block.NoobOreBlock;
+import io.itch.awesomekalin.noob.block.NoobLogBlock;
+import io.itch.awesomekalin.noob.block.NoobLeavesBlock;
+import io.itch.awesomekalin.noob.block.NoobFenceGateBlock;
+import io.itch.awesomekalin.noob.block.NoobFenceBlock;
 import io.itch.awesomekalin.noob.block.NoobDimPortalBlock;
 import io.itch.awesomekalin.noob.block.NoobChestBlock;
+import io.itch.awesomekalin.noob.block.NoobButtonBlock;
 import io.itch.awesomekalin.noob.block.NoobBlockBlock;
+import io.itch.awesomekalin.noob.block.DirtWoodBlock;
+import io.itch.awesomekalin.noob.block.DirtStairsBlock;
+import io.itch.awesomekalin.noob.block.DirtSlabBlock;
+import io.itch.awesomekalin.noob.block.DirtPressurePlateBlock;
+import io.itch.awesomekalin.noob.block.DirtPlanksBlock;
+import io.itch.awesomekalin.noob.block.DirtLogBlock;
+import io.itch.awesomekalin.noob.block.DirtLeavesBlock;
+import io.itch.awesomekalin.noob.block.DirtFenceGateBlock;
+import io.itch.awesomekalin.noob.block.DirtFenceBlock;
+import io.itch.awesomekalin.noob.block.DirtButtonBlock;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NoobModBlocks {
@@ -25,6 +45,26 @@ public class NoobModBlocks {
 	public static final Block NOOB_DIM_PORTAL = register(new NoobDimPortalBlock());
 	public static final Block NOOB_ORE = register(new NoobOreBlock());
 	public static final Block NOOB_BLOCK = register(new NoobBlockBlock());
+	public static final Block DIRT_WOOD = register(new DirtWoodBlock());
+	public static final Block DIRT_LOG = register(new DirtLogBlock());
+	public static final Block DIRT_PLANKS = register(new DirtPlanksBlock());
+	public static final Block DIRT_LEAVES = register(new DirtLeavesBlock());
+	public static final Block DIRT_STAIRS = register(new DirtStairsBlock());
+	public static final Block DIRT_SLAB = register(new DirtSlabBlock());
+	public static final Block DIRT_FENCE = register(new DirtFenceBlock());
+	public static final Block DIRT_FENCE_GATE = register(new DirtFenceGateBlock());
+	public static final Block DIRT_PRESSURE_PLATE = register(new DirtPressurePlateBlock());
+	public static final Block DIRT_BUTTON = register(new DirtButtonBlock());
+	public static final Block NOOB_WOOD = register(new NoobWoodBlock());
+	public static final Block NOOB_LOG = register(new NoobLogBlock());
+	public static final Block NOOB_PLANKS = register(new NoobPlanksBlock());
+	public static final Block NOOB_LEAVES = register(new NoobLeavesBlock());
+	public static final Block NOOB_STAIRS = register(new NoobStairsBlock());
+	public static final Block NOOB_SLAB = register(new NoobSlabBlock());
+	public static final Block NOOB_FENCE = register(new NoobFenceBlock());
+	public static final Block NOOB_FENCE_GATE = register(new NoobFenceGateBlock());
+	public static final Block NOOB_PRESSURE_PLATE = register(new NoobPressurePlateBlock());
+	public static final Block NOOB_BUTTON = register(new NoobButtonBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);

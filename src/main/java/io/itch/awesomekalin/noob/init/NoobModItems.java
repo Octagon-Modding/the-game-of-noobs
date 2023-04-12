@@ -71,6 +71,26 @@ public class NoobModItems {
 			new SpawnEggItem(NoobModEntities.THE_NOOB, -13421569, -10027009, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB))
 					.setRegistryName("the_noob_spawn_egg"));
 	public static final Item NOOB_FOOD = register(new NoobFoodItem());
+	public static final Item DIRT_WOOD = register(NoobModBlocks.DIRT_WOOD, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_LOG = register(NoobModBlocks.DIRT_LOG, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_PLANKS = register(NoobModBlocks.DIRT_PLANKS, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_LEAVES = register(NoobModBlocks.DIRT_LEAVES, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_STAIRS = register(NoobModBlocks.DIRT_STAIRS, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_SLAB = register(NoobModBlocks.DIRT_SLAB, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_FENCE = register(NoobModBlocks.DIRT_FENCE, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_FENCE_GATE = register(NoobModBlocks.DIRT_FENCE_GATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_PRESSURE_PLATE = register(NoobModBlocks.DIRT_PRESSURE_PLATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_BUTTON = register(NoobModBlocks.DIRT_BUTTON, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_WOOD = register(NoobModBlocks.NOOB_WOOD, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_LOG = register(NoobModBlocks.NOOB_LOG, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_PLANKS = register(NoobModBlocks.NOOB_PLANKS, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_LEAVES = register(NoobModBlocks.NOOB_LEAVES, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_STAIRS = register(NoobModBlocks.NOOB_STAIRS, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_SLAB = register(NoobModBlocks.NOOB_SLAB, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_FENCE = register(NoobModBlocks.NOOB_FENCE, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_FENCE_GATE = register(NoobModBlocks.NOOB_FENCE_GATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_PRESSURE_PLATE = register(NoobModBlocks.NOOB_PRESSURE_PLATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item NOOB_BUTTON = register(NoobModBlocks.NOOB_BUTTON, NoobModTabs.TAB_NOOB_TAB);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
