@@ -5,7 +5,6 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
@@ -44,7 +43,7 @@ public class DirtSwordItem extends NoobModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DirtPlanksBlock.block, (int) (1)));
+				return Ingredient.EMPTY;
 			}
 		}, 3, -3f, new Item.Properties().group(NoobTabItemGroup.tab)) {
 		}.setRegistryName("dirt_wood_sword"));

@@ -4,7 +4,6 @@ package io.itch.awesomekalin.noob.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.HoeItem;
@@ -44,7 +43,7 @@ public class DirtHoeItem extends NoobModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(DirtPlanksBlock.block, (int) (1)));
+				return Ingredient.EMPTY;
 			}
 		}, -3f, new Item.Properties().group(NoobTabItemGroup.tab)) {
 		}.setRegistryName("dirt_wood_hoe"));

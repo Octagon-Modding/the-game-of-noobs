@@ -5,7 +5,6 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ShovelItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
@@ -44,7 +43,7 @@ public class NoobWooShovelItem extends NoobModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(NoobPlanksBlock.block, (int) (1)));
+				return Ingredient.EMPTY;
 			}
 		}, 1, -3f, new Item.Properties().group(NoobTabItemGroup.tab)) {
 		}.setRegistryName("noob_wood_shovel"));
