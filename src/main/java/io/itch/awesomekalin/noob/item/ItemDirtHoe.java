@@ -9,41 +9,38 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import java.util.Set;
 import java.util.HashMap;
 
+import io.itch.awesomekalin.noob.creativetab.TabNoobTab;
 import io.itch.awesomekalin.noob.ElementsNoobMod;
 
 @ElementsNoobMod.ModElement.Tag
-public class ItemNoobPickaxe extends ElementsNoobMod.ModElement {
-	@GameRegistry.ObjectHolder("noob:noob_pickaxe")
+public class ItemDirtHoe extends ElementsNoobMod.ModElement {
+	@GameRegistry.ObjectHolder("noob:dirt_wood_hoe")
 	public static final Item block = null;
-	public ItemNoobPickaxe(ElementsNoobMod instance) {
-		super(instance, 127);
+	public ItemDirtHoe(ElementsNoobMod instance) {
+		super(instance, 91);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("NOOB_PICKAXE", 0, 26, 2f, -4f, 3)) {
-			{
-				this.attackSpeed = -3f;
-			}
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("DIRT_WOOD_HOE", 0, 10, 2f, 0f, 1)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("pickaxe", 0);
+				ret.put("hoe", 0);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("noob_pickaxe").setRegistryName("noob_pickaxe").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("dirt_wood_hoe").setRegistryName("dirt_wood_hoe").setCreativeTab(TabNoobTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:noob_pickaxe", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:dirt_wood_hoe", "inventory"));
 	}
 }

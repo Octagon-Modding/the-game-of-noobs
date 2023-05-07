@@ -3,25 +3,25 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "noob_pickaxe",
+    "texture": "dirt_sword",
     "customModelName": "Normal",
-    "name": "Noob Pickaxe",
+    "name": "Dirt Wood Sword",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:NoobTab"
     },
-    "toolType": "Pickaxe",
+    "toolType": "Sword",
     "harvestLevel": 0,
     "efficiency": 2.0,
     "attackSpeed": 1.0,
-    "enchantability": 3,
-    "damageVsEntity": 0.0,
-    "usageCount": 26,
+    "enchantability": 1,
+    "damageVsEntity": 1.0,
+    "usageCount": 10,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:NoobPlanks"
+        "value": "CUSTOM:DirtPlanks"
       }
     ],
     "immuneToFire": false,

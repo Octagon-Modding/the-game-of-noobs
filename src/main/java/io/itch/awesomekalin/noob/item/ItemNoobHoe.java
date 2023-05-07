@@ -11,12 +11,12 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import java.util.Set;
 import java.util.HashMap;
 
-import io.itch.awesomekalin.noob.creativetab.TabNoobTab;
 import io.itch.awesomekalin.noob.ElementsNoobMod;
 
 @ElementsNoobMod.ModElement.Tag
@@ -24,18 +24,18 @@ public class ItemNoobHoe extends ElementsNoobMod.ModElement {
 	@GameRegistry.ObjectHolder("noob:noob_hoe")
 	public static final Item block = null;
 	public ItemNoobHoe(ElementsNoobMod instance) {
-		super(instance, 27);
+		super(instance, 131);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("NOOB_HOE", 1, 46, 3f, 0f, 4)) {
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("NOOB_HOE", 0, 26, 2f, 0f, 3)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("hoe", 1);
+				ret.put("hoe", 0);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("noob_hoe").setRegistryName("noob_hoe").setCreativeTab(TabNoobTab.tab));
+		}.setUnlocalizedName("noob_hoe").setRegistryName("noob_hoe").setCreativeTab(CreativeTabs.TOOLS));
 	}
 
 	@SideOnly(Side.CLIENT)

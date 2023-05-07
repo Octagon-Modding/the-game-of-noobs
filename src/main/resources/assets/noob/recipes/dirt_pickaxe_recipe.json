@@ -2,29 +2,29 @@
   "group": "noob",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01",
-    "23",
-    " 5"
+    "012",
+    " 4 ",
+    " 7 "
   ],
   "key": {
     "0": {
-      "item": "noob:noob_planks"
+      "item": "noob:dirt_planks"
     },
     "1": {
-      "item": "noob:noob_planks"
+      "item": "noob:dirt_planks"
     },
     "2": {
-      "item": "noob:noob_planks"
+      "item": "noob:dirt_planks"
     },
-    "3": {
+    "4": {
       "item": "minecraft:stick"
     },
-    "5": {
+    "7": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "noob:noob_axe",
+    "item": "noob:dirt_wood_pickaxe",
     "count": 1
   }
 }

@@ -10,19 +10,19 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:DirtPlanks"
       },
       {
-        "value": "CUSTOM:NoobPlanks"
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:DirtPlanks"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:NoobPlanks"
+        "value": "CUSTOM:DirtPlanks"
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:NoobSword"
+      "value": "CUSTOM:DirtAxe"
     },
-    "name": "noob_sword_recipe",
+    "name": "dirt_axe_recipe",
     "namespace": "mod"
   }
 }

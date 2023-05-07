@@ -13,7 +13,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:NoobPlanks"
+        "value": "CUSTOM:DirtPlanks"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:NoobPlanks"
+        "value": "CUSTOM:DirtPlanks"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:NoobSword"
+      "value": "CUSTOM:DirtSword"
     },
-    "name": "noob_sword_recipe",
+    "name": "dirt_sword_recipe",
     "namespace": "mod"
   }
 }

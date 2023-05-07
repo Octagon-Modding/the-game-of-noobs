@@ -8,7 +8,7 @@
   ],
   "key": {
     "0": {
-      "item": "noob:noob_planks"
+      "item": "noob:dirt_planks"
     },
     "1": {
       "item": "minecraft:stick"
@@ -18,7 +18,7 @@
     }
   },
   "result": {
-    "item": "noob:noob_shovel",
+    "item": "noob:dirt_shovel",
     "count": 1
   }
 }
