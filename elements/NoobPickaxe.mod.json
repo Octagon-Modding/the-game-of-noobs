@@ -8,20 +8,20 @@
     "name": "Noob Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:NoobTab"
+      "value": "TOOLS"
     },
     "toolType": "Pickaxe",
-    "harvestLevel": 1,
-    "efficiency": 3.0,
+    "harvestLevel": 0,
+    "efficiency": 2.0,
     "attackSpeed": 1.0,
-    "enchantability": 4,
-    "damageVsEntity": 1.0,
-    "usageCount": 46,
+    "enchantability": 1,
+    "damageVsEntity": 0.0,
+    "usageCount": 10,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:NoobDust"
+        "value": "CUSTOM:NoobPlanks"
       }
     ],
     "immuneToFire": false,
