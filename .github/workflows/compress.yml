@@ -1,25 +1,19 @@
 name: Compress Images
+
 on: push
 
 jobs:
-  build:
-    name: calibreapp/image-actions
+  cleanup_tasks:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2
-      - name: Compress Images
-        id: calibre
-        uses: calibreapp/image-actions@main
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          compressOnly: true
-          pngQuality: '100'
-      - name: Create New Pull Request If Needed
-        if: steps.calibre.outputs.markdown != ''
-        uses: peter-evans/create-pull-request@v3
-        with:
-          title: Compressed Images
-          branch-suffix: timestamp
-          commit-message: Compressed Images
-          body: ${{ steps.calibre.outputs.markdown }}
+    - name: Cloning the repository
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+    - name: Crush Images!
+      uses: creyD/crush_action@v1.0
+      with:
+        branch: master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
