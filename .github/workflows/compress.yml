@@ -1,6 +1,6 @@
 name: Compress Images
 on:
-  push
+  push:
 jobs:
   build:
     # Only run on Pull Requests within the same repository, and not from forks.
