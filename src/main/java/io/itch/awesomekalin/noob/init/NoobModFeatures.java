@@ -30,10 +30,8 @@ import io.itch.awesomekalin.noob.NoobMod;
 public class NoobModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, NoobMod.MODID);
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
-	public static final RegistryObject<Feature<?>> NOOB_CHEST = register("noob_chest", NoobChestFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, NoobChestFeature.GENERATE_BIOMES, NoobChestFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> NOOB_ORE = register("noob_ore", NoobOreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, NoobOreFeature.GENERATE_BIOMES, NoobOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> NOOB_CHEST = register("noob_chest", NoobChestFeature::feature, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, NoobChestFeature.GENERATE_BIOMES, NoobChestFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> NOOB_ORE = register("noob_ore", NoobOreFeature::feature, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, NoobOreFeature.GENERATE_BIOMES, NoobOreFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
@@ -48,7 +46,6 @@ public class NoobModFeatures {
 		}
 	}
 
-	private static record FeatureRegistration(GenerationStep.Decoration stage, Set<ResourceLocation> biomes,
-			Supplier<Holder<PlacedFeature>> placedFeature) {
+	private static record FeatureRegistration(GenerationStep.Decoration stage, Set<ResourceLocation> biomes, Supplier<Holder<PlacedFeature>> placedFeature) {
 	}
 }

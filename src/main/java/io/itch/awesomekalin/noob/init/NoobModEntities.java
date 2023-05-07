@@ -23,8 +23,7 @@ import io.itch.awesomekalin.noob.NoobMod;
 public class NoobModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, NoobMod.MODID);
 	public static final RegistryObject<EntityType<TheNoobEntity>> THE_NOOB = register("the_noob",
-			EntityType.Builder.<TheNoobEntity>of(TheNoobEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(TheNoobEntity::new)
+			EntityType.Builder.<TheNoobEntity>of(TheNoobEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheNoobEntity::new)
 
 					.sized(0.6f, 1.8f));
 

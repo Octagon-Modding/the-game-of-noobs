@@ -15,10 +15,9 @@ import io.itch.awesomekalin.noob.init.NoobModTabs;
 
 public class NoobFoodItem extends Item {
 	public NoobFoodItem() {
-		super(new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f)
+		super(new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

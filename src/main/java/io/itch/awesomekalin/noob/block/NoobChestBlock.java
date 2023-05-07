@@ -1,9 +1,6 @@
 
 package io.itch.awesomekalin.noob.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.MaterialColor;
@@ -22,22 +19,16 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 import io.itch.awesomekalin.noob.procedures.NoobChestOnBlockRightClickedProcedure;
 import io.itch.awesomekalin.noob.block.entity.NoobChestBlockEntity;
 
-public class NoobChestBlock extends Block
-		implements
-
-			EntityBlock {
+public class NoobChestBlock extends Block implements EntityBlock {
 	public NoobChestBlock() {
 		super(BlockBehaviour.Properties.of(Material.SPONGE, MaterialColor.TERRACOTTA_ORANGE).sound(SoundType.SLIME_BLOCK).strength(1f, 10f));
 	}
@@ -55,22 +46,6 @@ public class NoobChestBlock extends Block
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
-	@OnlyIn(Dist.CLIENT)
-	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
-		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		for (int l = 0; l < 4; ++l) {
-			double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
-			double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 0.5D;
-			double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 0.5D;
-			world.addParticle(ParticleTypes.ITEM_SLIME, x0, y0, z0, 0, 0, 0);
-		}
-	}
-
 	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
@@ -81,7 +56,6 @@ public class NoobChestBlock extends Block
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		NoobChestOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

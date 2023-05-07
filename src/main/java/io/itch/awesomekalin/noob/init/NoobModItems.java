@@ -58,19 +58,34 @@ public class NoobModItems {
 	public static final RegistryObject<Item> MUD_HOE = REGISTRY.register("mud_hoe", () -> new MudHoeItem());
 	public static final RegistryObject<Item> MUD_SHOVEL_TOP = REGISTRY.register("mud_shovel_top", () -> new MudShovelTopItem());
 	public static final RegistryObject<Item> MUD_SHOVEL_BOTTOM = REGISTRY.register("mud_shovel_bottom", () -> new MudShovelBottomItem());
-	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_HELMET = REGISTRY.register("dirt_armour_armor_helmet",
-			() -> new DirtArmourArmorItem.Helmet());
-	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_CHESTPLATE = REGISTRY.register("dirt_armour_armor_chestplate",
-			() -> new DirtArmourArmorItem.Chestplate());
-	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_LEGGINGS = REGISTRY.register("dirt_armour_armor_leggings",
-			() -> new DirtArmourArmorItem.Leggings());
-	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_BOOTS = REGISTRY.register("dirt_armour_armor_boots",
-			() -> new DirtArmourArmorItem.Boots());
+	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_HELMET = REGISTRY.register("dirt_armour_armor_helmet", () -> new DirtArmourArmorItem.Helmet());
+	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_CHESTPLATE = REGISTRY.register("dirt_armour_armor_chestplate", () -> new DirtArmourArmorItem.Chestplate());
+	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_LEGGINGS = REGISTRY.register("dirt_armour_armor_leggings", () -> new DirtArmourArmorItem.Leggings());
+	public static final RegistryObject<Item> DIRT_ARMOUR_ARMOR_BOOTS = REGISTRY.register("dirt_armour_armor_boots", () -> new DirtArmourArmorItem.Boots());
 	public static final RegistryObject<Item> SALIVA = REGISTRY.register("saliva", () -> new SalivaItem());
 	public static final RegistryObject<Item> CREATIVE_GAUNTLET = REGISTRY.register("creative_gauntlet", () -> new CreativeGauntletItem());
-	public static final RegistryObject<Item> THE_NOOB = REGISTRY.register("the_noob_spawn_egg",
-			() -> new ForgeSpawnEggItem(NoobModEntities.THE_NOOB, -13421569, -10027009, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB)));
+	public static final RegistryObject<Item> THE_NOOB_SPAWN_EGG = REGISTRY.register("the_noob_spawn_egg", () -> new ForgeSpawnEggItem(NoobModEntities.THE_NOOB, -13421569, -10027009, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB)));
 	public static final RegistryObject<Item> NOOB_FOOD = REGISTRY.register("noob_food", () -> new NoobFoodItem());
+	public static final RegistryObject<Item> DIRT_WOOD = block(NoobModBlocks.DIRT_WOOD, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_LOG = block(NoobModBlocks.DIRT_LOG, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_PLANKS = block(NoobModBlocks.DIRT_PLANKS, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_LEAVES = block(NoobModBlocks.DIRT_LEAVES, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_STAIRS = block(NoobModBlocks.DIRT_STAIRS, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_SLAB = block(NoobModBlocks.DIRT_SLAB, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_FENCE = block(NoobModBlocks.DIRT_FENCE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_FENCE_GATE = block(NoobModBlocks.DIRT_FENCE_GATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_PRESSURE_PLATE = block(NoobModBlocks.DIRT_PRESSURE_PLATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_BUTTON = block(NoobModBlocks.DIRT_BUTTON, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_WOOD = block(NoobModBlocks.NOOB_WOOD, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_LOG = block(NoobModBlocks.NOOB_LOG, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_PLANKS = block(NoobModBlocks.NOOB_PLANKS, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_LEAVES = block(NoobModBlocks.NOOB_LEAVES, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_STAIRS = block(NoobModBlocks.NOOB_STAIRS, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_SLAB = block(NoobModBlocks.NOOB_SLAB, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_FENCE = block(NoobModBlocks.NOOB_FENCE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_FENCE_GATE = block(NoobModBlocks.NOOB_FENCE_GATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_PRESSURE_PLATE = block(NoobModBlocks.NOOB_PRESSURE_PLATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_BUTTON = block(NoobModBlocks.NOOB_BUTTON, NoobModTabs.TAB_NOOB_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -39,8 +39,8 @@ public class CreativeGauntletItem extends Item {
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
-		InteractionResult retval = super.useOn(context);
+		super.useOn(context);
 		CreativeGauntletRightClickedProcedure.execute(context.getLevel(), context.getPlayer());
-		return retval;
+		return InteractionResult.SUCCESS;
 	}
 }

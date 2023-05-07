@@ -5,6 +5,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.Minecraft;
@@ -68,7 +69,7 @@ public class NoobChestGUIScreen extends AbstractContainerScreen<NoobChestGUIMenu
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Noob Chest", 60, 2, -1);
+		this.font.draw(poseStack, new TranslatableComponent("gui.noob.noob_chest_gui.label_noob_chest"), 60, 2, -1);
 	}
 
 	@Override

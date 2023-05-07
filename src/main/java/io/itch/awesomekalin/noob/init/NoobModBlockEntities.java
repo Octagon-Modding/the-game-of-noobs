@@ -18,8 +18,7 @@ public class NoobModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, NoobMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> NOOB_CHEST = register("noob_chest", NoobModBlocks.NOOB_CHEST, NoobChestBlockEntity::new);
 
-	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
-			BlockEntityType.BlockEntitySupplier<?> supplier) {
+	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}
 }

@@ -43,10 +43,9 @@ public class NoobOreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new NoobOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("noob:noob_ore", FEATURE,
-				new OreConfiguration(NoobOreFeatureRuleTest.INSTANCE, NoobModBlocks.NOOB_ORE.get().defaultBlockState(), 32));
-		PLACED_FEATURE = PlacementUtils.register("noob:noob_ore", CONFIGURED_FEATURE, List.of(CountPlacement.of(32), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("noob:noob_ore", FEATURE, new OreConfiguration(NoobOreFeatureRuleTest.INSTANCE, NoobModBlocks.NOOB_ORE.get().defaultBlockState(), 32));
+		PLACED_FEATURE = PlacementUtils.register("noob:noob_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(32), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -55,8 +54,7 @@ public class NoobOreFeature extends OreFeature {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD,
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("noob:noob_dim")));
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("noob:noob_dim")));
 
 	public NoobOreFeature() {
 		super(OreConfiguration.CODEC);

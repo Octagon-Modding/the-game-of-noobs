@@ -43,10 +43,9 @@ public class NoobChestFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new NoobChestFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("noob:noob_chest", FEATURE,
-				new OreConfiguration(NoobChestFeatureRuleTest.INSTANCE, NoobModBlocks.NOOB_CHEST.get().defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("noob:noob_chest", CONFIGURED_FEATURE, List.of(CountPlacement.of(20), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("noob:noob_chest", FEATURE, new OreConfiguration(NoobChestFeatureRuleTest.INSTANCE, NoobModBlocks.NOOB_CHEST.get().defaultBlockState(), 16));
+		PLACED_FEATURE = PlacementUtils.register("noob:noob_chest", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(20), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

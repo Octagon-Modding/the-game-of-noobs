@@ -20,8 +20,7 @@ import io.itch.awesomekalin.noob.world.inventory.NoobChestGUIMenu;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NoobModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<NoobChestGUIMenu> NOOB_CHEST_GUI = register("noob_chest_gui",
-			(id, inv, extraData) -> new NoobChestGUIMenu(id, inv, extraData));
+	public static final MenuType<NoobChestGUIMenu> NOOB_CHEST_GUI = register("noob_chest_gui", (id, inv, extraData) -> new NoobChestGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);
