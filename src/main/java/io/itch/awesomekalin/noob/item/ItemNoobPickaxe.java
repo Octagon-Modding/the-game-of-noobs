@@ -24,12 +24,12 @@ public class ItemNoobPickaxe extends ElementsNoobMod.ModElement {
 	@GameRegistry.ObjectHolder("noob:noob_pickaxe")
 	public static final Item block = null;
 	public ItemNoobPickaxe(ElementsNoobMod instance) {
-		super(instance, 127);
+		super(instance, 147);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("NOOB_PICKAXE", 0, 26, 2f, -4f, 3)) {
+		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("NOOB_PICKAXE", 0, 10, 2f, -4f, 1)) {
 			{
 				this.attackSpeed = -3f;
 			}

@@ -3,20 +3,20 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "noob_hoe",
+    "texture": "noobwoo_shovel",
     "customModelName": "Normal",
-    "name": "Noob Hoe",
+    "name": "Noob Wood Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:NoobTab"
     },
-    "toolType": "Hoe",
+    "toolType": "Spade",
     "harvestLevel": 0,
     "efficiency": 2.0,
     "attackSpeed": 1.0,
-    "enchantability": 1,
+    "enchantability": 3,
     "damageVsEntity": 0.0,
-    "usageCount": 10,
+    "usageCount": 26,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [

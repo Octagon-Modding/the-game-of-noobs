@@ -9,41 +9,38 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemHoe;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import java.util.Set;
 import java.util.HashMap;
 
+import io.itch.awesomekalin.noob.creativetab.TabNoobTab;
 import io.itch.awesomekalin.noob.ElementsNoobMod;
 
 @ElementsNoobMod.ModElement.Tag
-public class ItemNoobShovel extends ElementsNoobMod.ModElement {
-	@GameRegistry.ObjectHolder("noob:noob_shovel")
+public class ItemNoobWooHoe extends ElementsNoobMod.ModElement {
+	@GameRegistry.ObjectHolder("noob:noob_wood_hoe")
 	public static final Item block = null;
-	public ItemNoobShovel(ElementsNoobMod instance) {
-		super(instance, 150);
+	public ItemNoobWooHoe(ElementsNoobMod instance) {
+		super(instance, 161);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("NOOB_SHOVEL", 0, 10, 2f, -4f, 1)) {
-			{
-				this.attackSpeed = -3f;
-			}
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("NOOB_WOOD_HOE", 0, 26, 2f, 0f, 3)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("spade", 0);
+				ret.put("hoe", 0);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("noob_shovel").setRegistryName("noob_shovel").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("noob_wood_hoe").setRegistryName("noob_wood_hoe").setCreativeTab(TabNoobTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:noob_shovel", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:noob_wood_hoe", "inventory"));
 	}
 }

@@ -12,7 +12,6 @@ import net.minecraft.item.ItemTool;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.init.Blocks;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -20,34 +19,35 @@ import net.minecraft.block.Block;
 
 import java.util.Set;
 
+import io.itch.awesomekalin.noob.creativetab.TabNoobTab;
 import io.itch.awesomekalin.noob.ElementsNoobMod;
 
 @ElementsNoobMod.ModElement.Tag
-public class ItemNoobAxe extends ElementsNoobMod.ModElement {
-	@GameRegistry.ObjectHolder("noob:noob_axe")
+public class ItemNoobWooAxe extends ElementsNoobMod.ModElement {
+	@GameRegistry.ObjectHolder("noob:noob_wood_axe")
 	public static final Item block = null;
-	public ItemNoobAxe(ElementsNoobMod instance) {
-		super(instance, 148);
+	public ItemNoobWooAxe(ElementsNoobMod instance) {
+		super(instance, 158);
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemToolCustom() {
-		}.setUnlocalizedName("noob_axe").setRegistryName("noob_axe").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("noob_wood_axe").setRegistryName("noob_wood_axe").setCreativeTab(TabNoobTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:noob_axe", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:noob_wood_axe", "inventory"));
 	}
 	private static class ItemToolCustom extends ItemTool {
 		private static final Set<Block> effective_items_set = com.google.common.collect.Sets
 				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
 						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("NOOB_AXE", 0, 10, 2f, -4f, 1), effective_items_set);
-			this.attackDamage = -4f;
+			super(EnumHelper.addToolMaterial("NOOB_WOOD_AXE", 0, 26, 2f, -2f, 3), effective_items_set);
+			this.attackDamage = -2f;
 			this.attackSpeed = -3f;
 		}
 

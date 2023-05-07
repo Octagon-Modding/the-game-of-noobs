@@ -24,12 +24,12 @@ public class ItemNoobHoe extends ElementsNoobMod.ModElement {
 	@GameRegistry.ObjectHolder("noob:noob_hoe")
 	public static final Item block = null;
 	public ItemNoobHoe(ElementsNoobMod instance) {
-		super(instance, 131);
+		super(instance, 151);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("NOOB_HOE", 0, 26, 2f, 0f, 3)) {
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("NOOB_HOE", 0, 10, 2f, 0f, 1)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
 				ret.put("hoe", 0);

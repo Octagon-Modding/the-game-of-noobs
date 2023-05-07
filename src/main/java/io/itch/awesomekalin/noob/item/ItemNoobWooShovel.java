@@ -11,25 +11,25 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import java.util.Set;
 import java.util.HashMap;
 
+import io.itch.awesomekalin.noob.creativetab.TabNoobTab;
 import io.itch.awesomekalin.noob.ElementsNoobMod;
 
 @ElementsNoobMod.ModElement.Tag
-public class ItemNoobShovel extends ElementsNoobMod.ModElement {
-	@GameRegistry.ObjectHolder("noob:noob_shovel")
+public class ItemNoobWooShovel extends ElementsNoobMod.ModElement {
+	@GameRegistry.ObjectHolder("noob:noob_wood_shovel")
 	public static final Item block = null;
-	public ItemNoobShovel(ElementsNoobMod instance) {
-		super(instance, 150);
+	public ItemNoobWooShovel(ElementsNoobMod instance) {
+		super(instance, 160);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("NOOB_SHOVEL", 0, 10, 2f, -4f, 1)) {
+		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("NOOB_WOOD_SHOVEL", 0, 26, 2f, -4f, 3)) {
 			{
 				this.attackSpeed = -3f;
 			}
@@ -38,12 +38,12 @@ public class ItemNoobShovel extends ElementsNoobMod.ModElement {
 				ret.put("spade", 0);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("noob_shovel").setRegistryName("noob_shovel").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("noob_wood_shovel").setRegistryName("noob_wood_shovel").setCreativeTab(TabNoobTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:noob_shovel", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("noob:noob_wood_shovel", "inventory"));
 	}
 }
