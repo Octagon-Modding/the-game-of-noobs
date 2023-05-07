@@ -979,6 +979,206 @@
       "ids": {},
       "registry_name": "noob_stick_recipe",
       "path": "~/noob_wood"
+    },
+    {
+      "name": "DirtPickaxe",
+      "type": "tool",
+      "sortid": 87,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_wood_pickaxe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtAxe",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_wood_axe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtSword",
+      "type": "tool",
+      "sortid": 89,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_wood_sword",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtShovel",
+      "type": "tool",
+      "sortid": 90,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_wood_shovel",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtHoe",
+      "type": "tool",
+      "sortid": 91,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_wood_hoe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_pickaxe_recipe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtAxeRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_axe_recipe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtSwordRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_sword_recipe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtShovelRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_shovel_recipe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtHoeRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_hoe_recipe",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "NoobWooPickaxe",
+      "type": "tool",
+      "sortid": 157,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_wood_pickaxe",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooAxe",
+      "type": "tool",
+      "sortid": 158,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_wood_axe",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooSword",
+      "type": "tool",
+      "sortid": 159,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_wood_sword",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooShovel",
+      "type": "tool",
+      "sortid": 160,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_wood_shovel",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooHoe",
+      "type": "tool",
+      "sortid": 161,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_wood_hoe",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_woo_pickaxe_recipe",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooAxeRecipe",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_woo_axe_recipe",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooSwordRecipe",
+      "type": "recipe",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_woo_sword_recipe",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooShovelRecipe",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_woo_shovel_recipe",
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooHoeRecipe",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_woo_hoe_recipe",
+      "path": "~/blocks/noob_wood"
     }
   ],
   "variable_elements": [
@@ -1011,9 +1211,11 @@
   "language_map": {
     "en_us": {
       "item.noob.noob_armor_leggings": "Noob Leggings",
+      "item.noob.noob_wood_sword": "Noob Wood Sword",
       "item.noob.mudpickaxe": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
       "item.noob.noob_hoe": "Noob Hoe",
+      "item.noob.noob_wood_hoe": "Noob Wood Hoe",
       "itemGroup.tabnoob_tab": "The Game Of Noobs",
       "item.noob.creative_gauntlet": "Creative Gauntlet",
       "item.noob.noob_armor_chestplate": "Noob Chestplate",
@@ -1025,12 +1227,15 @@
       "item.noob.mudaxe": "Mud Axe",
       "item.noob.mud_shovel": "Mud Shovel",
       "item.noob.saliva": "Saliva",
+      "item.noob.dirt_wood_shovel": "Dirt Wood Shovel",
       "item.noob_axe.name": "Noob Axe",
       "item.noob_hoe.name": "Noob Hoe",
       "item.mud_hoe.name": "Mud Hoe",
+      "item.noob.noob_wood_shovel": "Noob Wood Shovel",
       "item.noob.dirt_armour_armor_chestplate": "DirtArmour Chestplate",
       "item.noob.the_noob_spawn_egg": "The Noob Spawn Egg",
       "item.noob.noob_dust": "Noob",
+      "item.noob.dirt_wood_axe": "Dirt Wood Axe",
       "item.mudsword.name": "Mud Sword",
       "item.mud_shovel_top.name": "Mud Shovel Top",
       "item.mud_shovel_bottom.name": "Mud Shovel Bottom",
@@ -1038,6 +1243,7 @@
       "item.noob.noob_armor_helmet": "Noob Helmet",
       "item.mudaxe.name": "Mud Axe",
       "item.noob_armorboots.name": "Noob Boots",
+      "item.noob.dirt_wood_pickaxe": "Dirt Wood Pickaxe",
       "item.noob_armorbody.name": "Noob Chestplate",
       "block.noob.noob_block": "Block of Noob",
       "entity.noob.the_noob": "The Noob",
@@ -1046,8 +1252,10 @@
       "item.noob.mudsword": "Mud Sword",
       "item.noob_armorhelmet.name": "Noob Helmet",
       "item.noob.noob_shovel": "Noob Shovel",
+      "item.noob.dirt_wood_sword": "Dirt Wood Sword",
       "block.noob.noobchest": "Noob Chest",
       "item.noob.noob_sword": "Noob Sword",
+      "item.noob.dirt_wood_hoe": "Dirt Wood Hoe",
       "item.noob_shovel.name": "Noob Shovel",
       "item.noob.noobdim": "Noob Igniter",
       "item.noob_sword.name": "Noob Sword",
@@ -1059,10 +1267,12 @@
       "item.mud_shovel.name": "Mud Shovel",
       "item.noob_armorlegs.name": "Noob Leggings",
       "biome.noob.noobbio": "Noob Bio",
+      "item.noob.noob_wood_pickaxe": "Noob Wood Pickaxe",
       "item.noobdim.name": "Noob Igniter",
       "item.noob_pickaxe.name": "Noob Pickaxe",
       "item.noobfood.name": "Noob Food",
       "item.noob.noob_axe": "Noob Axe",
+      "item.noob.noob_wood_axe": "Noob Wood Axe",
       "item.noob.dirt_armour_armor_helmet": "DirtArmour Helmet"
     }
   },
@@ -1071,7 +1281,16 @@
     "children": [
       {
         "name": "blocks",
-        "children": []
+        "children": [
+          {
+            "name": "dirt_wood",
+            "children": []
+          },
+          {
+            "name": "noob_wood",
+            "children": []
+          }
+        ]
       },
       {
         "name": "biomes",
