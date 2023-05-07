@@ -18,6 +18,11 @@ import java.util.List;
 import java.util.ArrayList;
 
 import io.itch.awesomekalin.noob.item.SalivaItem;
+import io.itch.awesomekalin.noob.item.NoobWooSwordItem;
+import io.itch.awesomekalin.noob.item.NoobWooShovelItem;
+import io.itch.awesomekalin.noob.item.NoobWooPickaxeItem;
+import io.itch.awesomekalin.noob.item.NoobWooHoeItem;
+import io.itch.awesomekalin.noob.item.NoobWooAxeItem;
 import io.itch.awesomekalin.noob.item.NoobSwordItem;
 import io.itch.awesomekalin.noob.item.NoobShovelItem;
 import io.itch.awesomekalin.noob.item.NoobPickaxeItem;
@@ -34,6 +39,11 @@ import io.itch.awesomekalin.noob.item.MudShovelBottomItem;
 import io.itch.awesomekalin.noob.item.MudPickaxeItem;
 import io.itch.awesomekalin.noob.item.MudHoeItem;
 import io.itch.awesomekalin.noob.item.MudAxeItem;
+import io.itch.awesomekalin.noob.item.DirtSwordItem;
+import io.itch.awesomekalin.noob.item.DirtShovelItem;
+import io.itch.awesomekalin.noob.item.DirtPickaxeItem;
+import io.itch.awesomekalin.noob.item.DirtHoeItem;
+import io.itch.awesomekalin.noob.item.DirtAxeItem;
 import io.itch.awesomekalin.noob.item.DirtArmourArmorItem;
 import io.itch.awesomekalin.noob.item.CreativeGauntletItem;
 
@@ -90,7 +100,17 @@ public class NoobModItems {
 	public static final Item NOOB_FENCE = register(NoobModBlocks.NOOB_FENCE, NoobModTabs.TAB_NOOB_TAB);
 	public static final Item NOOB_FENCE_GATE = register(NoobModBlocks.NOOB_FENCE_GATE, NoobModTabs.TAB_NOOB_TAB);
 	public static final Item NOOB_PRESSURE_PLATE = register(NoobModBlocks.NOOB_PRESSURE_PLATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_WOOD_PICKAXE = register(new DirtPickaxeItem());
 	public static final Item NOOB_BUTTON = register(NoobModBlocks.NOOB_BUTTON, NoobModTabs.TAB_NOOB_TAB);
+	public static final Item DIRT_WOOD_AXE = register(new DirtAxeItem());
+	public static final Item DIRT_WOOD_SWORD = register(new DirtSwordItem());
+	public static final Item DIRT_WOOD_SHOVEL = register(new DirtShovelItem());
+	public static final Item DIRT_WOOD_HOE = register(new DirtHoeItem());
+	public static final Item NOOB_WOOD_PICKAXE = register(new NoobWooPickaxeItem());
+	public static final Item NOOB_WOOD_AXE = register(new NoobWooAxeItem());
+	public static final Item NOOB_WOOD_SWORD = register(new NoobWooSwordItem());
+	public static final Item NOOB_WOOD_SHOVEL = register(new NoobWooShovelItem());
+	public static final Item NOOB_WOOD_HOE = register(new NoobWooHoeItem());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
