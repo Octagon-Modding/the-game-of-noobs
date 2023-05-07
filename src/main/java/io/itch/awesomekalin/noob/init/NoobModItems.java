@@ -15,6 +15,11 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import io.itch.awesomekalin.noob.item.SalivaItem;
+import io.itch.awesomekalin.noob.item.NoobWooSwordItem;
+import io.itch.awesomekalin.noob.item.NoobWooShovelItem;
+import io.itch.awesomekalin.noob.item.NoobWooPickaxeItem;
+import io.itch.awesomekalin.noob.item.NoobWooHoeItem;
+import io.itch.awesomekalin.noob.item.NoobWooAxeItem;
 import io.itch.awesomekalin.noob.item.NoobSwordItem;
 import io.itch.awesomekalin.noob.item.NoobShovelItem;
 import io.itch.awesomekalin.noob.item.NoobPickaxeItem;
@@ -31,6 +36,11 @@ import io.itch.awesomekalin.noob.item.MudShovelBottomItem;
 import io.itch.awesomekalin.noob.item.MudPickaxeItem;
 import io.itch.awesomekalin.noob.item.MudHoeItem;
 import io.itch.awesomekalin.noob.item.MudAxeItem;
+import io.itch.awesomekalin.noob.item.DirtSwordItem;
+import io.itch.awesomekalin.noob.item.DirtShovelItem;
+import io.itch.awesomekalin.noob.item.DirtPickaxeItem;
+import io.itch.awesomekalin.noob.item.DirtHoeItem;
+import io.itch.awesomekalin.noob.item.DirtAxeItem;
 import io.itch.awesomekalin.noob.item.DirtArmourArmorItem;
 import io.itch.awesomekalin.noob.item.CreativeGauntletItem;
 import io.itch.awesomekalin.noob.NoobMod;
@@ -85,7 +95,17 @@ public class NoobModItems {
 	public static final RegistryObject<Item> NOOB_FENCE = block(NoobModBlocks.NOOB_FENCE, NoobModTabs.TAB_NOOB_TAB);
 	public static final RegistryObject<Item> NOOB_FENCE_GATE = block(NoobModBlocks.NOOB_FENCE_GATE, NoobModTabs.TAB_NOOB_TAB);
 	public static final RegistryObject<Item> NOOB_PRESSURE_PLATE = block(NoobModBlocks.NOOB_PRESSURE_PLATE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_WOOD_PICKAXE = REGISTRY.register("dirt_wood_pickaxe", () -> new DirtPickaxeItem());
 	public static final RegistryObject<Item> NOOB_BUTTON = block(NoobModBlocks.NOOB_BUTTON, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> DIRT_WOOD_AXE = REGISTRY.register("dirt_wood_axe", () -> new DirtAxeItem());
+	public static final RegistryObject<Item> DIRT_WOOD_SWORD = REGISTRY.register("dirt_wood_sword", () -> new DirtSwordItem());
+	public static final RegistryObject<Item> DIRT_WOOD_SHOVEL = REGISTRY.register("dirt_wood_shovel", () -> new DirtShovelItem());
+	public static final RegistryObject<Item> DIRT_WOOD_HOE = REGISTRY.register("dirt_wood_hoe", () -> new DirtHoeItem());
+	public static final RegistryObject<Item> NOOB_WOOD_PICKAXE = REGISTRY.register("noob_wood_pickaxe", () -> new NoobWooPickaxeItem());
+	public static final RegistryObject<Item> NOOB_WOOD_AXE = REGISTRY.register("noob_wood_axe", () -> new NoobWooAxeItem());
+	public static final RegistryObject<Item> NOOB_WOOD_SWORD = REGISTRY.register("noob_wood_sword", () -> new NoobWooSwordItem());
+	public static final RegistryObject<Item> NOOB_WOOD_SHOVEL = REGISTRY.register("noob_wood_shovel", () -> new NoobWooShovelItem());
+	public static final RegistryObject<Item> NOOB_WOOD_HOE = REGISTRY.register("noob_wood_hoe", () -> new NoobWooHoeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -904,7 +904,8 @@
           "src/main/resources/assets/noob/models/item/dirt_wood.json",
           "src/main/resources/assets/noob/blockstates/dirt_wood.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtLog",
@@ -920,7 +921,8 @@
           "src/main/java/io/itch/awesomekalin/noob/block/DirtLogBlock.java",
           "src/main/resources/assets/noob/blockstates/dirt_log.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPlanks",
@@ -936,7 +938,8 @@
           "src/main/java/io/itch/awesomekalin/noob/block/DirtPlanksBlock.java",
           "src/main/resources/assets/noob/models/block/dirt_planks.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtLeaves",
@@ -952,7 +955,8 @@
           "src/main/resources/assets/noob/blockstates/dirt_leaves.json",
           "src/main/resources/assets/noob/models/block/dirt_leaves.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtStairs",
@@ -970,7 +974,8 @@
           "src/main/resources/assets/noob/models/item/dirt_stairs.json",
           "src/main/resources/assets/noob/models/block/dirt_stairs_inner.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtSlab",
@@ -988,7 +993,8 @@
           "src/main/java/io/itch/awesomekalin/noob/block/DirtSlabBlock.java",
           "src/main/resources/assets/noob/models/item/dirt_slab.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFence",
@@ -1006,7 +1012,8 @@
           "src/main/java/io/itch/awesomekalin/noob/block/DirtFenceBlock.java",
           "src/main/resources/assets/noob/models/block/dirt_fence_post.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFenceGate",
@@ -1025,7 +1032,8 @@
           "src/main/resources/assets/noob/models/block/dirt_fence_gate_wall.json",
           "src/main/resources/assets/noob/blockstates/dirt_fence_gate.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPressurePlate",
@@ -1042,7 +1050,8 @@
           "src/main/resources/assets/noob/models/block/dirt_pressure_plate.json",
           "src/main/resources/assets/noob/models/item/dirt_pressure_plate.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFenceGateRecipe",
@@ -1055,7 +1064,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_fence_gate_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtButtonRecipe",
@@ -1068,7 +1078,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_button_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "NoobWood",
@@ -1084,7 +1095,8 @@
           "src/main/resources/assets/noob/models/item/noob_wood.json",
           "src/main/resources/assets/noob/models/block/noob_wood.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobLog",
@@ -1100,7 +1112,8 @@
           "src/main/resources/assets/noob/models/block/noob_log.json",
           "src/main/java/io/itch/awesomekalin/noob/block/NoobLogBlock.java"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPlanks",
@@ -1116,7 +1129,8 @@
           "src/main/resources/assets/noob/blockstates/noob_planks.json",
           "src/main/resources/assets/noob/models/block/noob_planks.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobLeaves",
@@ -1132,7 +1146,8 @@
           "src/main/java/io/itch/awesomekalin/noob/block/NoobLeavesBlock.java",
           "src/main/resources/assets/noob/models/item/noob_leaves.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobStairs",
@@ -1150,7 +1165,8 @@
           "src/main/resources/assets/noob/models/item/noob_stairs.json",
           "src/main/java/io/itch/awesomekalin/noob/block/NoobStairsBlock.java"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobSlab",
@@ -1168,7 +1184,8 @@
           "src/main/resources/assets/noob/models/block/noob_slab_full.json",
           "src/main/resources/assets/noob/models/block/noob_slab.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFence",
@@ -1186,7 +1203,8 @@
           "src/main/resources/assets/noob/models/item/noob_fence.json",
           "src/main/resources/assets/noob/models/block/noob_fence_inventory.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFenceGate",
@@ -1205,7 +1223,8 @@
           "src/main/resources/assets/noob/models/item/noob_fence_gate.json",
           "src/main/resources/assets/noob/models/block/noob_fence_gate_wall.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPressurePlate",
@@ -1222,7 +1241,8 @@
           "src/main/resources/assets/noob/blockstates/noob_pressure_plate.json",
           "src/main/resources/assets/noob/models/block/noob_pressure_plate_down.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobButton",
@@ -1240,7 +1260,8 @@
           "src/main/resources/assets/noob/blockstates/noob_button.json",
           "src/main/resources/assets/noob/models/block/noob_button.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobItemsTag",
@@ -1253,7 +1274,8 @@
         "files": [
           "src/main/resources/data/forge/tags/items/noob_log.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobWoodRecipe",
@@ -1266,7 +1288,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_wood_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPlanksRecipe",
@@ -1279,7 +1302,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_planks_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobStairsRecipe",
@@ -1292,7 +1316,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_stairs_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobSlabRecipe",
@@ -1305,7 +1330,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_slab_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFenceRecipe",
@@ -1318,7 +1344,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_fence_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobFenceGateRecipe",
@@ -1331,7 +1358,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_fence_gate_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobPressurePlateRecipe",
@@ -1344,7 +1372,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_pressure_plate_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobButtonRecipe",
@@ -1357,7 +1386,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_button_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "NoobStickRecipe",
@@ -1370,7 +1400,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/noob_stick_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/noob_wood"
     },
     {
       "name": "DirtButton",
@@ -1388,7 +1419,8 @@
           "src/main/resources/assets/noob/models/block/dirt_button_pressed.json",
           "src/main/resources/assets/noob/blockstates/dirt_button.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtItemsTag",
@@ -1401,7 +1433,8 @@
         "files": [
           "src/main/resources/data/forge/tags/items/dirt_log.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtWoodRecipe",
@@ -1414,7 +1447,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_wood_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPlanksRecipe",
@@ -1427,7 +1461,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_planks_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtStairsRecipe",
@@ -1440,7 +1475,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_stairs_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtSlabRecipe",
@@ -1453,7 +1489,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_slab_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtFenceRecipe",
@@ -1466,7 +1503,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_fence_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtPressurePlateRecipe",
@@ -1479,7 +1517,8 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_pressure_plate_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
     },
     {
       "name": "DirtStickRecipe",
@@ -1492,7 +1531,298 @@
         "files": [
           "src/main/resources/data/noob/recipes/dirt_stick_recipe.json"
         ]
-      }
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtPickaxe",
+      "type": "tool",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_wood_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/item/DirtPickaxeItem.java",
+          "src/main/resources/assets/noob/models/item/dirt_wood_pickaxe.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtAxe",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_wood_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/noob/models/item/dirt_wood_axe.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/DirtAxeItem.java"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtSword",
+      "type": "tool",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_wood_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/item/DirtSwordItem.java",
+          "src/main/resources/assets/noob/models/item/dirt_wood_sword.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtShovel",
+      "type": "tool",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_wood_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/item/DirtShovelItem.java",
+          "src/main/resources/assets/noob/models/item/dirt_wood_shovel.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtHoe",
+      "type": "tool",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_wood_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/noob/models/item/dirt_wood_hoe.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/DirtHoeItem.java"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/dirt_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtAxeRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/dirt_axe_recipe.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtSwordRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/dirt_sword_recipe.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtShovelRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/dirt_shovel_recipe.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtHoeRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/dirt_hoe_recipe.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "NoobWooPickaxe",
+      "type": "tool",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_wood_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooPickaxeItem.java",
+          "src/main/resources/assets/noob/models/item/noob_wood_pickaxe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooAxe",
+      "type": "tool",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_wood_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooAxeItem.java",
+          "src/main/resources/assets/noob/models/item/noob_wood_axe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooSword",
+      "type": "tool",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_wood_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/noob/models/item/noob_wood_sword.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooSwordItem.java"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooShovel",
+      "type": "tool",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_wood_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/noob/models/item/noob_wood_shovel.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooShovelItem.java"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooHoe",
+      "type": "tool",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_wood_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooHoeItem.java",
+          "src/main/resources/assets/noob/models/item/noob_wood_hoe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_woo_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/noob_woo_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooAxeRecipe",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_woo_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/noob_woo_axe_recipe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooSwordRecipe",
+      "type": "recipe",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_woo_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/noob_woo_sword_recipe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooShovelRecipe",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_woo_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/noob_woo_shovel_recipe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobWooHoeRecipe",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_woo_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/noob/recipes/noob_woo_hoe_recipe.json"
+        ]
+      },
+      "path": "~/blocks/noob_wood"
     }
   ],
   "variable_elements": [
@@ -1514,6 +1844,7 @@
     "en_us": {
       "item.noob.noob_armor_leggings": "Noob Leggings",
       "block.noob.noob_button": "Noob Button",
+      "item.noob.noob_wood_sword": "Noob Wood Sword",
       "block.noob.dirt_log": "Dirt Log",
       "item.noob.mudpickaxe": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
@@ -1522,6 +1853,7 @@
       "block.noob.noob_wood": "Noob Wood",
       "block.noob.noob_pressure_plate": "Noob Pressure Plate",
       "item.noob.noob_hoe": "Noob Hoe",
+      "item.noob.noob_wood_hoe": "Noob Wood Hoe",
       "itemGroup.tabnoob_tab": "The Game of Noobs",
       "item.noob.creative_gauntlet": "Creative Gauntlet",
       "item.noob.noob_armor_chestplate": "Noob Chestplate",
@@ -1537,14 +1869,17 @@
       "block.noob.noob_fence_gate": "Noob Fence Gate",
       "item.noob.saliva": "Saliva",
       "block.noob.dirt_stairs": "Dirt Stairs",
+      "item.noob.dirt_wood_shovel": "Dirt Wood Shovel",
       "item.noob_axe.name": "Noob Axe",
       "item.noob_hoe.name": "Noob Hoe",
       "item.mud_hoe.name": "Mud Hoe",
+      "item.noob.noob_wood_shovel": "Noob Wood Shovel",
       "item.noob.dirt_armour_armor_chestplate": "DirtArmour Chestplate",
       "block.noob.noob_stairs": "Noob Stairs",
       "item.noob.the_noob_spawn_egg": "The Noob Spawn Egg",
       "item.noob.noob_dust": "Noob",
       "block.noob.dirt_button": "Dirt Button",
+      "item.noob.dirt_wood_axe": "Dirt Wood Axe",
       "item.mudsword.name": "Mud Sword",
       "item.mud_shovel_top.name": "Mud Shovel Top",
       "item.mud_shovel_bottom.name": "Mud Shovel Bottom",
@@ -1554,6 +1889,7 @@
       "gui.noob.noob_chest_gui.label_noob_chest": "Noob Chest",
       "item.noob_armorboots.name": "Noob Boots",
       "block.noob.noob_slab": "Noob Slab",
+      "item.noob.dirt_wood_pickaxe": "Dirt Wood Pickaxe",
       "item.noob_armorbody.name": "Noob Chestplate",
       "block.noob.dirt_leaves": "Dirt Leaves",
       "block.noob.noob_block": "Block of Noob",
@@ -1574,8 +1910,10 @@
       "block.noob.dirt_slab": "Dirt Slab",
       "item.noob_armorhelmet.name": "Noob Helmet",
       "item.noob.noob_shovel": "Noob Shovel",
+      "item.noob.dirt_wood_sword": "Dirt Wood Sword",
       "block.noob.noobchest": "Noob Chest",
       "item.noob.noob_sword": "Noob Sword",
+      "item.noob.dirt_wood_hoe": "Dirt Wood Hoe",
       "item.noob_shovel.name": "Noob Shovel",
       "item.noob.noobdim": "Noob Igniter",
       "item.noob.noob_food": "Noob Food",
@@ -1590,10 +1928,12 @@
       "item.noob_armorlegs.name": "Noob Leggings",
       "item.noob.mud_pickaxe": "Mud Pickaxe",
       "biome.noob.noobbio": "Noob Bio",
+      "item.noob.noob_wood_pickaxe": "Noob Wood Pickaxe",
       "item.noobdim.name": "Noob Igniter",
       "item.noob_pickaxe.name": "Noob Pickaxe",
       "item.noobfood.name": "Noob Food",
       "item.noob.noob_axe": "Noob Axe",
+      "item.noob.noob_wood_axe": "Noob Wood Axe",
       "item.noob.dirt_armour_armor_helmet": "DirtArmour Helmet"
     }
   },
@@ -1609,6 +1949,14 @@
           },
           {
             "name": "noob_ore",
+            "children": []
+          },
+          {
+            "name": "dirt_wood",
+            "children": []
+          },
+          {
+            "name": "noob_wood",
             "children": []
           }
         ]
