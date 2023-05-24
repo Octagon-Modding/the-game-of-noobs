@@ -37,7 +37,7 @@ public class NoobBioTrunkDecorator extends TrunkVineDecorator {
 			if (random.nextInt(3) > 0) {
 				BlockPos bp = blockpos.below();
 				if (Feature.isAir(levelReader, bp)) {
-					biConsumer.accept(blockpos, Blocks.DIRT.defaultBlockState());
+					biConsumer.accept(blockpos, Blocks.AIR.defaultBlockState());
 				}
 			}
 		});
