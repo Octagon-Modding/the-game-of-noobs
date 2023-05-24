@@ -36,6 +36,8 @@ import net.minecraft.block.Block;
 import java.util.Set;
 import java.util.Random;
 
+import io.itch.awesomekalin.noob.block.DirtLogBlock;
+import io.itch.awesomekalin.noob.block.DirtLeavesBlock;
 import io.itch.awesomekalin.noob.NoobModElements;
 
 @NoobModElements.ModElement.Tag
@@ -74,8 +76,8 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(1))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					new CustomTreeFeature()
-							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.DIRT.getDefaultState()),
-									new SimpleBlockStateProvider(Blocks.DIRT.getDefaultState()))).baseHeight(5)
+							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(DirtLogBlock.block.getDefaultState()),
+									new SimpleBlockStateProvider(DirtLeavesBlock.block.getDefaultState()))).baseHeight(5)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(4, 0.1F, 1))));
 		}
@@ -151,9 +153,9 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.DIRT
-												|| state.getBlock() == Blocks.DIRT) {
-											setTreeBlockState(changedBlocks, world, blockpos, Blocks.DIRT.getDefaultState(), bbox);
+												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.AIR
+												|| state.getBlock() == DirtLeavesBlock.block) {
+											setTreeBlockState(changedBlocks, world, blockpos, DirtLeavesBlock.block.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -162,18 +164,18 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, Blocks.DIRT.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, DirtLogBlock.block.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == Blocks.DIRT || state.getBlock() == Blocks.DIRT) {
+									|| state.getBlock() == Blocks.AIR || state.getBlock() == DirtLeavesBlock.block) {
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.DIRT.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.AIR.getDefaultState(), bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.DIRT.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.AIR.getDefaultState(), bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.DIRT.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.AIR.getDefaultState(), bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.DIRT.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.AIR.getDefaultState(), bbox);
 								}
 							}
 						}
@@ -183,7 +185,7 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.DIRT) {
+									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == DirtLeavesBlock.block) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -206,7 +208,7 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.DIRT.getDefaultState(), bbox);
+												Blocks.AIR.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -222,16 +224,16 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, Blocks.DIRT.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, Blocks.AIR.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, Blocks.DIRT.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, Blocks.AIR.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.DIRT || blockType == Blocks.DIRT
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == DirtLogBlock.block || blockType == DirtLeavesBlock.block
 					|| blockType == Blocks.DIRT || blockType == Blocks.DIRT;
 		}
 
