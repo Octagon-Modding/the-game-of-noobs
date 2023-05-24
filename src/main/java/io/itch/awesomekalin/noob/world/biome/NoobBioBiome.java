@@ -30,6 +30,7 @@ import java.util.List;
 import io.itch.awesomekalin.noob.world.features.treedecorators.NoobBioTrunkDecorator;
 import io.itch.awesomekalin.noob.world.features.treedecorators.NoobBioLeaveDecorator;
 import io.itch.awesomekalin.noob.world.features.treedecorators.NoobBioFruitDecorator;
+import io.itch.awesomekalin.noob.init.NoobModBlocks;
 
 import com.google.common.collect.ImmutableList;
 
@@ -40,8 +41,8 @@ public class NoobBioBiome {
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("noob:tree_noob_bio",
 						FeatureUtils.register("noob:tree_noob_bio", Feature.TREE,
-								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.DIRT.defaultBlockState()), new StraightTrunkPlacer(5, 2, 0), BlockStateProvider.simple(Blocks.DIRT.defaultBlockState()),
-										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
+								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(NoobModBlocks.DIRT_LOG.get().defaultBlockState()), new StraightTrunkPlacer(5, 2, 0),
+										BlockStateProvider.simple(NoobModBlocks.DIRT_LEAVES.get().defaultBlockState()), new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
 										.decorators(ImmutableList.of(NoobBioLeaveDecorator.INSTANCE, NoobBioTrunkDecorator.INSTANCE, NoobBioFruitDecorator.INSTANCE)).build()),
 						List.of(CountPlacement.of(4), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,

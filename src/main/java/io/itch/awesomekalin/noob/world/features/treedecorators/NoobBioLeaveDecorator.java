@@ -43,10 +43,10 @@ public class NoobBioLeaveDecorator extends LeaveVineDecorator {
 	}
 
 	private static void addVine(LevelSimulatedReader levelReader, BlockPos blockPos, BiConsumer<BlockPos, BlockState> biConsumer) {
-		biConsumer.accept(blockPos, Blocks.DIRT.defaultBlockState());
+		biConsumer.accept(blockPos, Blocks.AIR.defaultBlockState());
 		int i = 4;
 		for (BlockPos blockpos = blockPos.below(); Feature.isAir(levelReader, blockpos) && i > 0; --i) {
-			biConsumer.accept(blockpos, Blocks.DIRT.defaultBlockState());
+			biConsumer.accept(blockpos, Blocks.AIR.defaultBlockState());
 			blockpos = blockpos.below();
 		}
 	}
