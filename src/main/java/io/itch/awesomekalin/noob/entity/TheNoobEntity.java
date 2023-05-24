@@ -47,7 +47,9 @@ import io.itch.awesomekalin.noob.NoobModElements;
 
 @NoobModElements.ModElement.Tag
 public class TheNoobEntity extends NoobModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(0.6f, 1.8f)).build("the_noob").setRegistryName("the_noob");
 	public TheNoobEntity(NoobModElements instance) {
 		super(instance, 57);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -55,9 +57,6 @@ public class TheNoobEntity extends NoobModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("the_noob")
-						.setRegistryName("the_noob");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -13421569, -10027009, new Item.Properties().group(NoobTabItemGroup.tab))
 				.setRegistryName("the_noob_spawn_egg"));

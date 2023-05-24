@@ -1,8 +1,6 @@
 
 package io.itch.awesomekalin.noob.gui;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
@@ -40,6 +38,8 @@ import java.util.HashMap;
 
 import io.itch.awesomekalin.noob.NoobModElements;
 import io.itch.awesomekalin.noob.NoobMod;
+
+import com.mojang.blaze3d.platform.GlStateManager;
 
 @NoobModElements.ModElement.Tag
 public class NoobChestGUIGui extends NoobModElements.ModElement {
@@ -308,12 +308,15 @@ public class NoobChestGUIGui extends NoobModElements.ModElement {
 		}
 
 		@Override
-		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1, 1, 1, 1);
+		protected void drawGuiContainerBackgroundLayer(float partialTicks, int gx, int gy) {
+			GlStateManager.color4f(1, 1, 1, 1);
+			GlStateManager.enableBlend();
+			GlStateManager.blendFunc(GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ONE);
 			Minecraft.getInstance().getTextureManager().bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+			GlStateManager.disableBlend();
 		}
 
 		@Override

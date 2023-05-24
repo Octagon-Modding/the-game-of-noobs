@@ -11,6 +11,7 @@ import java.util.Map;
 import io.itch.awesomekalin.noob.item.CreativeGauntletItem;
 import io.itch.awesomekalin.noob.NoobModVariables;
 import io.itch.awesomekalin.noob.NoobModElements;
+import io.itch.awesomekalin.noob.NoobMod;
 
 @NoobModElements.ModElement.Tag
 public class CreativeGauntletRightClickedProcedure extends NoobModElements.ModElement {
@@ -21,12 +22,12 @@ public class CreativeGauntletRightClickedProcedure extends NoobModElements.ModEl
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure CreativeGauntletRightClicked!");
+				NoobMod.LOGGER.warn("Failed to load dependency entity for procedure CreativeGauntletRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure CreativeGauntletRightClicked!");
+				NoobMod.LOGGER.warn("Failed to load dependency world for procedure CreativeGauntletRightClicked!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

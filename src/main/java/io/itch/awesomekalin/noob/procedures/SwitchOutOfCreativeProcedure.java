@@ -15,6 +15,7 @@ import java.util.HashMap;
 
 import io.itch.awesomekalin.noob.NoobModVariables;
 import io.itch.awesomekalin.noob.NoobModElements;
+import io.itch.awesomekalin.noob.NoobMod;
 
 @NoobModElements.ModElement.Tag
 public class SwitchOutOfCreativeProcedure extends NoobModElements.ModElement {
@@ -26,12 +27,12 @@ public class SwitchOutOfCreativeProcedure extends NoobModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure SwitchOutOfCreative!");
+				NoobMod.LOGGER.warn("Failed to load dependency entity for procedure SwitchOutOfCreative!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				System.err.println("Failed to load dependency world for procedure SwitchOutOfCreative!");
+				NoobMod.LOGGER.warn("Failed to load dependency world for procedure SwitchOutOfCreative!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
