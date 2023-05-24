@@ -74,16 +74,16 @@
     "minHeight": 5,
     "maxWaterDepth": 0,
     "treeStem": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:DirtLog"
     },
     "treeBranch": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:DirtLeaves"
     },
     "treeVines": {
-      "value": "Blocks.DIRT#0"
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": "Blocks.DIRT#0"
+      "value": "Blocks.AIR"
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,

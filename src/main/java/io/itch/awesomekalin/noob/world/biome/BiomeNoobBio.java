@@ -18,6 +18,8 @@ import net.minecraft.block.Block;
 
 import java.util.Random;
 
+import io.itch.awesomekalin.noob.block.BlockDirtLog;
+import io.itch.awesomekalin.noob.block.BlockDirtLeaves;
 import io.itch.awesomekalin.noob.ElementsNoobMod;
 
 @ElementsNoobMod.ModElement.Tag
@@ -131,9 +133,9 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getBlock().isLeaves(state, world, blockpos)
-												|| state.getBlock() == Blocks.DIRT.getStateFromMeta(0).getBlock()
-												|| state.getBlock() == Blocks.DIRT.getStateFromMeta(0).getBlock()) {
-											this.setBlockAndNotifyAdequately(world, blockpos, Blocks.DIRT.getStateFromMeta(0));
+												|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
+												|| state.getBlock() == BlockDirtLeaves.block.getDefaultState().getBlock()) {
+											this.setBlockAndNotifyAdequately(world, blockpos, BlockDirtLeaves.block.getDefaultState());
 										}
 									}
 								}
@@ -142,18 +144,18 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							if (state.getBlock().isAir(state, world, genhPos) || state.getBlock() == Blocks.DIRT.getStateFromMeta(0).getBlock()
-									|| state.getBlock() == Blocks.DIRT.getStateFromMeta(0).getBlock()) {
-								this.setBlockAndNotifyAdequately(world, position.up(genh), Blocks.DIRT.getStateFromMeta(0));
+							if (state.getBlock().isAir(state, world, genhPos) || state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
+									|| state.getBlock() == BlockDirtLeaves.block.getDefaultState().getBlock()) {
+								this.setBlockAndNotifyAdequately(world, position.up(genh), BlockDirtLog.block.getDefaultState());
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										this.setBlockAndNotifyAdequately(world, position.add(-1, genh, 0), Blocks.DIRT.getStateFromMeta(0));
+										this.setBlockAndNotifyAdequately(world, position.add(-1, genh, 0), Blocks.AIR.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										this.setBlockAndNotifyAdequately(world, position.add(1, genh, 0), Blocks.DIRT.getStateFromMeta(0));
+										this.setBlockAndNotifyAdequately(world, position.add(1, genh, 0), Blocks.AIR.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										this.setBlockAndNotifyAdequately(world, position.add(0, genh, -1), Blocks.DIRT.getStateFromMeta(0));
+										this.setBlockAndNotifyAdequately(world, position.add(0, genh, -1), Blocks.AIR.getDefaultState());
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										this.setBlockAndNotifyAdequately(world, position.add(0, genh, 1), Blocks.DIRT.getStateFromMeta(0));
+										this.setBlockAndNotifyAdequately(world, position.add(0, genh, 1), Blocks.AIR.getDefaultState());
 								}
 							}
 						}
@@ -164,7 +166,7 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
 									if (state.getBlock().isLeaves(state, world, bpos)
-											|| state.getBlock() == Blocks.DIRT.getStateFromMeta(0).getBlock()) {
+											|| state.getBlock() == BlockDirtLeaves.block.getDefaultState().getBlock()) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -188,7 +190,7 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 										EnumFacing enumfacing1 = enumfacing.getOpposite();
 										this.setBlockAndNotifyAdequately(world,
 												position.add(enumfacing1.getFrontOffsetX(), height - 5 + hlevel, enumfacing1.getFrontOffsetZ()),
-												Blocks.DIRT.getStateFromMeta(0));
+												Blocks.AIR.getDefaultState());
 									}
 								}
 							}
@@ -204,18 +206,18 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 		}
 
 		private void addVines(World world, BlockPos pos) {
-			this.setBlockAndNotifyAdequately(world, pos, Blocks.DIRT.getStateFromMeta(0));
+			this.setBlockAndNotifyAdequately(world, pos, Blocks.AIR.getDefaultState());
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				this.setBlockAndNotifyAdequately(world, blockpos, Blocks.DIRT.getStateFromMeta(0));
+				this.setBlockAndNotifyAdequately(world, blockpos, Blocks.AIR.getDefaultState());
 				blockpos = blockpos.down();
 			}
 		}
 
 		@Override
 		protected boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.DIRT.getStateFromMeta(0).getBlock()
-					|| blockType == Blocks.DIRT.getStateFromMeta(0).getBlock() || blockType == Blocks.DIRT.getStateFromMeta(0).getBlock()
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == BlockDirtLog.block.getDefaultState().getBlock()
+					|| blockType == BlockDirtLeaves.block.getDefaultState().getBlock() || blockType == Blocks.DIRT.getStateFromMeta(0).getBlock()
 					|| blockType == Blocks.DIRT.getStateFromMeta(0).getBlock();
 		}
 
