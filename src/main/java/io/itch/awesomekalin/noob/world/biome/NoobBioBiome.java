@@ -44,6 +44,8 @@ import java.util.Set;
 import java.util.Random;
 import java.util.List;
 
+import io.itch.awesomekalin.noob.block.DirtLogBlock;
+import io.itch.awesomekalin.noob.block.DirtLeavesBlock;
 import io.itch.awesomekalin.noob.NoobModElements;
 
 import com.google.common.collect.ImmutableList;
@@ -69,17 +71,16 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.STRONGHOLD);
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
-				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
-						Feature.TREE
-								.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.DIRT.getDefaultState()),
-										new SimpleBlockStateProvider(Blocks.DIRT.getDefaultState()),
-										new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-										new StraightTrunkPlacer(5, 2, 0), new TwoLayerFeature(1, 0, 1)))
-										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
-												new CustomCocoaTreeDecorator()))
-										.build())
-								.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-								.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(4, 0.1F, 1))));
+				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(DirtLogBlock.block.getDefaultState()),
+								new SimpleBlockStateProvider(DirtLeavesBlock.block.getDefaultState()),
+								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
+								new StraightTrunkPlacer(5, 2, 0), new TwoLayerFeature(1, 0, 1)))
+								.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
+										new CustomCocoaTreeDecorator()))
+								.build())
+						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(4, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
 								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 1))));
@@ -123,7 +124,7 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.DIRT.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -145,7 +146,7 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.DIRT.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.AIR.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -182,7 +183,7 @@ public class NoobBioBiome extends NoobModElements.ModElement {
 							Direction direction1 = direction.getOpposite();
 							BlockPos blockpos = p_242865_5_.add(direction1.getXOffset(), 0, direction1.getZOffset());
 							if (Feature.isAirAt(p_225576_1_, blockpos)) {
-								BlockState blockstate = Blocks.DIRT.getDefaultState();
+								BlockState blockstate = Blocks.AIR.getDefaultState();
 								this.func_227423_a_(p_225576_1_, blockpos, blockstate, p_225576_5_, p_225576_6_);
 							}
 						}
