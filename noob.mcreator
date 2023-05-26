@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "DIMENSION": 1,
-    "GUI": 1
+    "GUI": 1,
+    "DIMENSION": 1
   },
   "mod_elements": [
     {
@@ -1128,6 +1128,16 @@
       "ids": {},
       "registry_name": "noob_woo_hoe_recipe",
       "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobBiome",
+      "type": "biome",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_biome",
+      "path": "~/biome"
     }
   ],
   "variable_elements": [
@@ -1164,18 +1174,18 @@
       "tile.noob_stairs.name": "Noob Stairs",
       "itemGroup.tabnoobtab": "The Game of Noobs",
       "item.dirt_wood_shovel.name": "Dirt Wood Shovel",
-      "tile.dirt_planks.name": "Dirt Planks",
       "item.dirt_armour_armorboots.name": "DirtArmour Boots",
+      "tile.dirt_planks.name": "Dirt Planks",
       "tile.dirt_leaves.name": "Dirt Leaves",
       "item.mudpickaxe.name": "Mud Pickaxe",
       "item.creative_gauntlet.name": "Creative Gauntlet",
       "tile.noob_ore.name": "Noob Ore",
       "tile.dirt_fence.name": "Dirt Fence",
       "item.dirt_wood_hoe.name": "Dirt Wood Hoe",
-      "item.dirt_armour_armorbody.name": "DirtArmour Chestplate",
-      "item.mud_hoe.name": "Mud Hoe",
-      "item.noob_hoe.name": "Noob Hoe",
       "item.noob_axe.name": "Noob Axe",
+      "item.noob_hoe.name": "Noob Hoe",
+      "item.mud_hoe.name": "Mud Hoe",
+      "item.dirt_armour_armorbody.name": "DirtArmour Chestplate",
       "item.mudsword.name": "Mud Sword",
       "item.mud_shovel_top.name": "Mud Shovel Top",
       "item.mud_shovel_bottom.name": "Mud Shovel Bottom",
@@ -1256,6 +1266,10 @@
       },
       {
         "name": "tags",
+        "children": []
+      },
+      {
+        "name": "biome",
         "children": []
       }
     ]
