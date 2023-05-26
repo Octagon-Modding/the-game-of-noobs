@@ -1179,6 +1179,16 @@
       "ids": {},
       "registry_name": "noob_woo_hoe_recipe",
       "path": "~/blocks/noob_wood"
+    },
+    {
+      "name": "NoobBiome",
+      "type": "biome",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_biome",
+      "path": "~/biomes"
     }
   ],
   "variable_elements": [
@@ -1210,8 +1220,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.noob.noob_wood_sword": "Noob Wood Sword",
       "item.noob.noob_armor_leggings": "Noob Leggings",
+      "item.noob.noob_wood_sword": "Noob Wood Sword",
       "block.noob.dirt_log": "Dirt Log",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
       "item.noob.mudpickaxe": "Mud Pickaxe",
@@ -1243,6 +1253,7 @@
       "item.noob.the_noob_spawn_egg": "The Noob Spawn Egg",
       "item.noob.noob_dust": "Noob",
       "item.noob.dirt_wood_axe": "Dirt Wood Axe",
+      "biome.noob.noob_biome": "Noob Biome",
       "item.mudsword.name": "Mud Sword",
       "item.mud_shovel_top.name": "Mud Shovel Top",
       "item.mud_shovel_bottom.name": "Mud Shovel Bottom",
