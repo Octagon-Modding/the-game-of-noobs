@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.List;
 import java.util.ArrayList;
 
+import io.itch.awesomekalin.noob.world.biome.NoobBiomeBiome;
 import io.itch.awesomekalin.noob.world.biome.NoobBioBiome;
 import io.itch.awesomekalin.noob.NoobMod;
 
@@ -22,6 +23,7 @@ import io.itch.awesomekalin.noob.NoobMod;
 public class NoobModBiomes {
 	private static final List<Biome> REGISTRY = new ArrayList<>();
 	public static Biome NOOB_BIO = register("noob_bio", NoobBioBiome.createBiome());
+	public static Biome NOOB_BIOME = register("noob_biome", NoobBiomeBiome.createBiome());
 
 	private static Biome register(String registryname, Biome biome) {
 		REGISTRY.add(biome.setRegistryName(new ResourceLocation(NoobMod.MODID, registryname)));
@@ -37,6 +39,7 @@ public class NoobModBiomes {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			NoobBioBiome.init();
+			NoobBiomeBiome.init();
 		});
 	}
 }
