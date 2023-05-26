@@ -1,7 +1,7 @@
 {
-  "item.noob.noob_wood_sword": "Noob Wood Sword",
-  "item.noob.noob_armor_leggings": "Noob Leggings",
   "block.noob.noob_button": "Noob Button",
+  "item.noob.noob_armor_leggings": "Noob Leggings",
+  "item.noob.noob_wood_sword": "Noob Wood Sword",
   "block.noob.dirt_log": "Dirt Log",
   "item.noob.mudpickaxe": "Mud Pickaxe",
   "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
@@ -37,6 +37,7 @@
   "item.noob.noob_dust": "Noob",
   "block.noob.dirt_button": "Dirt Button",
   "item.noob.dirt_wood_axe": "Dirt Wood Axe",
+  "biome.noob.noob_biome": "Noob Biome",
   "item.mudsword.name": "Mud Sword",
   "item.mud_shovel_top.name": "Mud Shovel Top",
   "item.mud_shovel_bottom.name": "Mud Shovel Bottom",
