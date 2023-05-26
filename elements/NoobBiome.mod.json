@@ -1,0 +1,125 @@
+{
+  "_fv": 39,
+  "_type": "biome",
+  "definition": {
+    "name": "Noob Biome",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:NoobChest"
+    },
+    "underwaterBlock": {
+      "value": ""
+    },
+    "grassColor": {
+      "value": -10066177,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -10066177,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -52429,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -52429,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 100.0,
+    "rainingPossibility": 1.0,
+    "temperature": 0.5,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -2.0,
+      "max": 2.0
+    },
+    "genHumidity": {
+      "min": -2.0,
+      "max": 2.0
+    },
+    "genContinentalness": {
+      "min": -2.0,
+      "max": 2.0
+    },
+    "genErosion": {
+      "min": -2.0,
+      "max": 2.0
+    },
+    "genWeirdness": {
+      "min": -2.0,
+      "max": 2.0
+    },
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "treesPerChunk": 5,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 7,
+    "treeStem": {
+      "value": "CUSTOM:NoobLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:NoobLeaves"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": true,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "Ores"
+    ],
+    "spawnEntries": []
+  }
+}
