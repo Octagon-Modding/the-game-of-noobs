@@ -1189,6 +1189,80 @@
       "ids": {},
       "registry_name": "noob_biome",
       "path": "~/biomes"
+    },
+    {
+      "name": "DirtSapling",
+      "type": "plant",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_sapling",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtSaplingUpdateTick",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_sapling_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "DirtSaplingPlantRightClicked",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_sapling_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [
@@ -1220,17 +1294,18 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.noob.noob_armor_leggings": "Noob Leggings",
       "item.noob.noob_wood_sword": "Noob Wood Sword",
+      "item.noob.noob_armor_leggings": "Noob Leggings",
       "block.noob.dirt_log": "Dirt Log",
-      "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
       "item.noob.mudpickaxe": "Mud Pickaxe",
+      "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
       "block.noob.dirt_fence": "Dirt Fence",
       "block.noob.noob_wood": "Noob Wood",
       "item.noob.noob_hoe": "Noob Hoe",
       "item.noob.noob_wood_hoe": "Noob Wood Hoe",
       "itemGroup.tabnoob_tab": "The Game Of Noobs",
       "item.noob.creative_gauntlet": "Creative Gauntlet",
+      "block.noob.dirt_sapling": "Dirt Sapling",
       "item.noob.noob_armor_chestplate": "Noob Chestplate",
       "item.mudpickaxe.name": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_boots": "DirtArmour Boots",
@@ -1353,6 +1428,10 @@
       },
       {
         "name": "noob_wood",
+        "children": []
+      },
+      {
+        "name": "procedures",
         "children": []
       }
     ]
