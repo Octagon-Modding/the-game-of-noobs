@@ -40,11 +40,11 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:NoobTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:DirtSapling"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
