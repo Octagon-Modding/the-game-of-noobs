@@ -2,6 +2,30 @@
   "variants": {
     "normal": {
       "model": "noob:dirt_log"
+    },
+    "facing=south": {
+      "model": "noob:dirt_log"
+    },
+    "facing=north": {
+      "model": "noob:dirt_log"
+    },
+    "facing=east": {
+      "model": "noob:dirt_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "noob:dirt_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "noob:dirt_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "noob:dirt_log",
+      "x": 90,
+      "y": 90
     }
   }
 }

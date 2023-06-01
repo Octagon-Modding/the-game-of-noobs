@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "GUI": 1,
-    "DIMENSION": 1
+    "DIMENSION": 1,
+    "GUI": 1
   },
   "mod_elements": [
     {
@@ -1138,6 +1138,80 @@
       "ids": {},
       "registry_name": "noob_biome",
       "path": "~/biome"
+    },
+    {
+      "name": "DirtSapling",
+      "type": "plant",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_sapling",
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtSaplingUpdateTick",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_sapling_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "DirtSaplingPlantRightClicked",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_sapling_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [
@@ -1179,6 +1253,7 @@
       "tile.dirt_leaves.name": "Dirt Leaves",
       "item.mudpickaxe.name": "Mud Pickaxe",
       "item.creative_gauntlet.name": "Creative Gauntlet",
+      "tile.dirt_sapling.name": "Dirt Sapling",
       "tile.noob_ore.name": "Noob Ore",
       "tile.dirt_fence.name": "Dirt Fence",
       "item.dirt_wood_hoe.name": "Dirt Wood Hoe",
@@ -1270,6 +1345,10 @@
       },
       {
         "name": "biome",
+        "children": []
+      },
+      {
+        "name": "procedures",
         "children": []
       }
     ]

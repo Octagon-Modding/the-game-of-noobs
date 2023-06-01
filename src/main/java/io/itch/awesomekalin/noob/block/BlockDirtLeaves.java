@@ -103,5 +103,10 @@ public class BlockDirtLeaves extends ElementsNoobMod.ModElement {
 		public int getFlammability(IBlockAccess world, BlockPos pos, EnumFacing face) {
 			return 3;
 		}
+
+		@Override
+		public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+			drops.add(new ItemStack(BlockDirtSapling.block, (int) (1)));
+		}
 	}
 }
