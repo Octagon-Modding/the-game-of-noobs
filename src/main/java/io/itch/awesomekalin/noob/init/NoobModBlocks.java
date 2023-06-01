@@ -7,6 +7,10 @@ package io.itch.awesomekalin.noob.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -27,6 +31,7 @@ import io.itch.awesomekalin.noob.block.NoobBlockBlock;
 import io.itch.awesomekalin.noob.block.DirtWoodBlock;
 import io.itch.awesomekalin.noob.block.DirtStairsBlock;
 import io.itch.awesomekalin.noob.block.DirtSlabBlock;
+import io.itch.awesomekalin.noob.block.DirtSaplingBlock;
 import io.itch.awesomekalin.noob.block.DirtPressurePlateBlock;
 import io.itch.awesomekalin.noob.block.DirtPlanksBlock;
 import io.itch.awesomekalin.noob.block.DirtLogBlock;
@@ -62,4 +67,14 @@ public class NoobModBlocks {
 	public static final RegistryObject<Block> NOOB_FENCE_GATE = REGISTRY.register("noob_fence_gate", () -> new NoobFenceGateBlock());
 	public static final RegistryObject<Block> NOOB_PRESSURE_PLATE = REGISTRY.register("noob_pressure_plate", () -> new NoobPressurePlateBlock());
 	public static final RegistryObject<Block> NOOB_BUTTON = REGISTRY.register("noob_button", () -> new NoobButtonBlock());
+	public static final RegistryObject<Block> DIRT_SAPLING = REGISTRY.register("dirt_sapling", () -> new DirtSaplingBlock());
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void clientSetup(FMLClientSetupEvent event) {
+			NoobDimPortalBlock.registerRenderLayer();
+			DirtSaplingBlock.registerRenderLayer();
+		}
+	}
 }

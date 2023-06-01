@@ -1840,6 +1840,88 @@
         ]
       },
       "path": "~/biomes"
+    },
+    {
+      "name": "DirtSapling",
+      "type": "plant",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_sapling",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/world/features/plants/DirtSaplingFeature.java",
+          "src/main/resources/assets/noob/models/block/dirt_sapling.json",
+          "src/main/resources/assets/noob/models/item/dirt_sapling.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/DirtSaplingBlock.java",
+          "src/main/resources/assets/noob/blockstates/dirt_sapling.json"
+        ]
+      },
+      "path": "~/blocks/dirt_wood"
+    },
+    {
+      "name": "DirtSaplingUpdateTick",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_sapling_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/procedures/DirtSaplingUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
+    },
+    {
+      "name": "DirtSaplingPlantRightClicked",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_sapling_plant_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/io/itch/awesomekalin/noob/procedures/DirtSaplingPlantRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/procedures"
     }
   ],
   "variable_elements": [
@@ -1859,9 +1941,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.noob.noob_wood_sword": "Noob Wood Sword",
-      "block.noob.noob_button": "Noob Button",
       "item.noob.noob_armor_leggings": "Noob Leggings",
+      "block.noob.noob_button": "Noob Button",
+      "item.noob.noob_wood_sword": "Noob Wood Sword",
       "block.noob.dirt_log": "Dirt Log",
       "item.noob.mudpickaxe": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
@@ -1873,6 +1955,7 @@
       "item.noob.noob_wood_hoe": "Noob Wood Hoe",
       "itemGroup.tabnoob_tab": "The Game of Noobs",
       "item.noob.creative_gauntlet": "Creative Gauntlet",
+      "block.noob.dirt_sapling": "Dirt Sapling",
       "item.noob.noob_armor_chestplate": "Noob Chestplate",
       "item.mudpickaxe.name": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_boots": "DirtArmour Boots",
@@ -2023,6 +2106,10 @@
       },
       {
         "name": "biomes",
+        "children": []
+      },
+      {
+        "name": "procedures",
         "children": []
       }
     ]

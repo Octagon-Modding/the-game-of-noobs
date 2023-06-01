@@ -22,6 +22,7 @@ import java.util.Set;
 import java.util.List;
 import java.util.ArrayList;
 
+import io.itch.awesomekalin.noob.world.features.plants.DirtSaplingFeature;
 import io.itch.awesomekalin.noob.world.features.ores.NoobOreFeature;
 import io.itch.awesomekalin.noob.world.features.ores.NoobChestFeature;
 import io.itch.awesomekalin.noob.NoobMod;
@@ -32,6 +33,8 @@ public class NoobModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> NOOB_CHEST = register("noob_chest", NoobChestFeature::feature, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, NoobChestFeature.GENERATE_BIOMES, NoobChestFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> NOOB_ORE = register("noob_ore", NoobOreFeature::feature, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, NoobOreFeature.GENERATE_BIOMES, NoobOreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DIRT_SAPLING = register("dirt_sapling", DirtSaplingFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, DirtSaplingFeature.GENERATE_BIOMES, DirtSaplingFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
