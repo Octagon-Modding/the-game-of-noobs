@@ -111,6 +111,7 @@ public class NoobModItems {
 	public static final Item NOOB_WOOD_SWORD = register(new NoobWooSwordItem());
 	public static final Item NOOB_WOOD_SHOVEL = register(new NoobWooShovelItem());
 	public static final Item NOOB_WOOD_HOE = register(new NoobWooHoeItem());
+	public static final Item DIRT_SAPLING = register(NoobModBlocks.DIRT_SAPLING, NoobModTabs.TAB_NOOB_TAB);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

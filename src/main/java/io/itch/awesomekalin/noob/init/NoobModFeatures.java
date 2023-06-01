@@ -20,6 +20,7 @@ import java.util.Set;
 import java.util.Map;
 import java.util.HashMap;
 
+import io.itch.awesomekalin.noob.world.features.plants.DirtSaplingFeature;
 import io.itch.awesomekalin.noob.world.features.ores.NoobOreFeature;
 import io.itch.awesomekalin.noob.world.features.ores.NoobChestFeature;
 
@@ -31,6 +32,8 @@ public class NoobModFeatures {
 				NoobChestFeature.CONFIGURED_FEATURE));
 		REGISTRY.put(NoobOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, NoobOreFeature.GENERATE_BIOMES,
 				NoobOreFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(DirtSaplingFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
+				DirtSaplingFeature.GENERATE_BIOMES, DirtSaplingFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

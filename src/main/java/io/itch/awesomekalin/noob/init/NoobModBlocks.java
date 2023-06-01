@@ -4,9 +4,11 @@
  */
 package io.itch.awesomekalin.noob.init;
 
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -30,6 +32,7 @@ import io.itch.awesomekalin.noob.block.NoobBlockBlock;
 import io.itch.awesomekalin.noob.block.DirtWoodBlock;
 import io.itch.awesomekalin.noob.block.DirtStairsBlock;
 import io.itch.awesomekalin.noob.block.DirtSlabBlock;
+import io.itch.awesomekalin.noob.block.DirtSaplingBlock;
 import io.itch.awesomekalin.noob.block.DirtPressurePlateBlock;
 import io.itch.awesomekalin.noob.block.DirtPlanksBlock;
 import io.itch.awesomekalin.noob.block.DirtLogBlock;
@@ -65,6 +68,7 @@ public class NoobModBlocks {
 	public static final Block NOOB_FENCE_GATE = register(new NoobFenceGateBlock());
 	public static final Block NOOB_PRESSURE_PLATE = register(new NoobPressurePlateBlock());
 	public static final Block NOOB_BUTTON = register(new NoobButtonBlock());
+	public static final Block DIRT_SAPLING = register(new DirtSaplingBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -74,5 +78,13 @@ public class NoobModBlocks {
 	@SubscribeEvent
 	public static void registerBlocks(RegistryEvent.Register<Block> event) {
 		event.getRegistry().registerAll(REGISTRY.toArray(new Block[0]));
+	}
+
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientSideHandler {
+		@SubscribeEvent
+		public static void clientSetup(FMLClientSetupEvent event) {
+			DirtSaplingBlock.registerRenderLayer();
+		}
 	}
 }

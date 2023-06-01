@@ -15,6 +15,8 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
+import io.itch.awesomekalin.noob.init.NoobModBlocks;
+
 public class DirtLeavesBlock extends LeavesBlock {
 	public DirtLeavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.GRASS).strength(0.02f).noOcclusion());
@@ -36,6 +38,6 @@ public class DirtLeavesBlock extends LeavesBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(NoobModBlocks.DIRT_SAPLING));
 	}
 }
