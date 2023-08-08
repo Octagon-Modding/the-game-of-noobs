@@ -3,5 +3,6 @@
   "textures": {
     "all": "noob:blocks/noob_ore_block",
     "particle": "noob:blocks/noob_ore_block"
-  }
+  },
+  "render_type": "solid"
 }

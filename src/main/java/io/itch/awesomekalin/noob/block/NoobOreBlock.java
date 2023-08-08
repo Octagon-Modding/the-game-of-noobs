@@ -20,7 +20,7 @@ import io.itch.awesomekalin.noob.init.NoobModItems;
 
 public class NoobOreBlock extends Block {
 	public NoobOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.8999999999999999f, 1.9083894548090878f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.9f, 1.9083894548f).requiresCorrectToolForDrops());
 	}
 
 	@Override

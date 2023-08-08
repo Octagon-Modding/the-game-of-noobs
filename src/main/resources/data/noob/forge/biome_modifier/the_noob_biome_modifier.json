@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "noob:the_noob",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

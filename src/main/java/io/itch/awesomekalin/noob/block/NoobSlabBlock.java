@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class NoobSlabBlock extends SlabBlock {
 	public NoobSlabBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.5f));
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.5f).dynamicShape());
 	}
 
 	@Override

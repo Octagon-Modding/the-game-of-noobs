@@ -3,5 +3,6 @@
   "textures": {
     "all": "noob:blocks/noob_log_side",
     "particle": "noob:blocks/noob_log_side"
-  }
+  },
+  "render_type": "solid"
 }

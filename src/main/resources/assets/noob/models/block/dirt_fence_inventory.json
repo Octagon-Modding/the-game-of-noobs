@@ -3,5 +3,6 @@
   "textures": {
     "texture": "noob:blocks/dirt_planks",
     "particle": "noob:blocks/dirt_planks"
-  }
+  },
+  "render_type": "solid"
 }

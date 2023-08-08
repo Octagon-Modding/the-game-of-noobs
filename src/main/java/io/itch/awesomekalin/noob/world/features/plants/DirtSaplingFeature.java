@@ -15,7 +15,6 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -33,17 +32,11 @@ public class DirtSaplingFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new DirtSaplingFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("noob:dirt_sapling", FEATURE,
-				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(NoobModBlocks.DIRT_SAPLING.get().defaultBlockState())), List.of(), 64));
+		CONFIGURED_FEATURE = FeatureUtils.register("noob:dirt_sapling", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(NoobModBlocks.DIRT_SAPLING.get())), List.of(), 64));
 		PLACED_FEATURE = PlacementUtils.register("noob:dirt_sapling", CONFIGURED_FEATURE, List.of(CountPlacement.of(0), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public DirtSaplingFeature() {

@@ -21,7 +21,7 @@ import io.itch.awesomekalin.noob.NoobMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NoobModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, NoobMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, NoobMod.MODID);
 	public static final RegistryObject<EntityType<TheNoobEntity>> THE_NOOB = register("the_noob",
 			EntityType.Builder.<TheNoobEntity>of(TheNoobEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TheNoobEntity::new)
 

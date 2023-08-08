@@ -8,5 +8,6 @@
     "south": "noob:blocks/noob_cobblestone",
     "west": "noob:blocks/noob_cobblestone",
     "particle": "noob:blocks/noob_cobblestone"
-  }
+  },
+  "render_type": "solid"
 }

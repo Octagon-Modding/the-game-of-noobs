@@ -8,5 +8,6 @@
     "south": "noob:blocks/noob_log_side",
     "west": "noob:blocks/noob_log_side",
     "particle": "noob:blocks/noob_log_top"
-  }
+  },
+  "render_type": "solid"
 }

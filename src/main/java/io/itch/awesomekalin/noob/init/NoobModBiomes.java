@@ -18,10 +18,12 @@ import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.dimension.DimensionType;
+import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
+import net.minecraft.world.level.biome.FeatureSorter;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.server.MinecraftServer;
@@ -39,11 +41,13 @@ import io.itch.awesomekalin.noob.NoobMod;
 
 import com.mojang.datafixers.util.Pair;
 
+import com.google.common.base.Suppliers;
+
 @Mod.EventBusSubscriber
 public class NoobModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, NoobMod.MODID);
-	public static final RegistryObject<Biome> NOOB_BIO = REGISTRY.register("noob_bio", () -> NoobBioBiome.createBiome());
-	public static final RegistryObject<Biome> NOOB_BIOME = REGISTRY.register("noob_biome", () -> NoobBiomeBiome.createBiome());
+	public static final RegistryObject<Biome> NOOB_BIO = REGISTRY.register("noob_bio", NoobBioBiome::createBiome);
+	public static final RegistryObject<Biome> NOOB_BIOME = REGISTRY.register("noob_biome", NoobBiomeBiome::createBiome);
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {
@@ -53,18 +57,18 @@ public class NoobModBiomes {
 		WorldGenSettings worldGenSettings = server.getWorldData().worldGenSettings();
 		for (Map.Entry<ResourceKey<LevelStem>, LevelStem> entry : worldGenSettings.dimensions().entrySet()) {
 			DimensionType dimensionType = entry.getValue().typeHolder().value();
-			if (dimensionType == dimensionTypeRegistry.getOrThrow(DimensionType.OVERWORLD_LOCATION)) {
+			if (dimensionType == dimensionTypeRegistry.getOrThrow(BuiltinDimensionTypes.OVERWORLD)) {
 				ChunkGenerator chunkGenerator = entry.getValue().generator();
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
 					for (Climate.ParameterPoint parameterPoint : NoobBiomeBiome.PARAMETER_POINTS) {
-						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, NOOB_BIOME.getId()))));
+						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, NOOB_BIOME.getId()))));
 					}
 
-					MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
-					chunkGenerator.biomeSource = moddedNoiseSource;
-					chunkGenerator.runtimeBiomeSource = moddedNoiseSource;
+					chunkGenerator.biomeSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
+					chunkGenerator.featuresPerStep = Suppliers
+							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
 				}
 				// Inject surface rules
 				if (chunkGenerator instanceof NoiseBasedChunkGenerator noiseGenerator) {
@@ -75,9 +79,9 @@ public class NoobModBiomes {
 						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, NOOB_BIOME.getId()), Blocks.GRASS_BLOCK.defaultBlockState(), NoobModBlocks.NOOB_CHEST.get().defaultBlockState(),
 								NoobModBlocks.NOOB_CHEST.get().defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
-								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(i -> new SurfaceRules.RuleSource[i])), noiseGeneratorSettings.seaLevel(), noiseGeneratorSettings.disableMobGeneration(),
-								noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
-						noiseGenerator.settings = new Holder.Direct(moddedNoiseGeneratorSettings);
+								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),
+								noiseGeneratorSettings.disableMobGeneration(), noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());
+						noiseGenerator.settings = new Holder.Direct<>(moddedNoiseGeneratorSettings);
 					}
 				}
 			}

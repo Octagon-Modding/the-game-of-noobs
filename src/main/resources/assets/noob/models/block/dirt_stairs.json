@@ -4,5 +4,6 @@
     "bottom": "noob:blocks/dirt_planks",
     "top": "noob:blocks/dirt_planks",
     "side": "noob:blocks/dirt_planks"
-  }
+  },
+  "render_type": "solid"
 }

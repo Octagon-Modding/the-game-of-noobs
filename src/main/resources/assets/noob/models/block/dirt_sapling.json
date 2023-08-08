@@ -3,5 +3,6 @@
   "textures": {
     "cross": "noob:blocks/dirt_sapling",
     "particle": "noob:blocks/dirt_sapling"
-  }
+  },
+  "render_type": "cutout"
 }

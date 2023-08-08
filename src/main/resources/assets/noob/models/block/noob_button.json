@@ -2,5 +2,6 @@
   "parent": "block/button",
   "textures": {
     "texture": "noob:blocks/noob_planks"
-  }
+  },
+  "render_type": "solid"
 }

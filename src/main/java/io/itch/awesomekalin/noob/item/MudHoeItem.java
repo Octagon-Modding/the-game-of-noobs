@@ -32,7 +32,7 @@ public class MudHoeItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 0, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
 	}

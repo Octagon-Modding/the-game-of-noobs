@@ -2,5 +2,6 @@
   "parent": "block/button_pressed",
   "textures": {
     "texture": "noob:blocks/dirt_planks"
-  }
+  },
+  "render_type": "solid"
 }

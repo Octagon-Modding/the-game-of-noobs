@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class DirtFenceGateBlock extends FenceGateBlock {
 	public DirtFenceGateBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.2f, 0.30000000000000004f));
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.2f, 0.3f).dynamicShape());
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package io.itch.awesomekalin.noob.init;
 
@@ -18,7 +18,7 @@ public class NoobModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(NoobModMenus.NOOB_CHEST_GUI, NoobChestGUIScreen::new);
+			MenuScreens.register(NoobModMenus.NOOB_CHEST_GUI.get(), NoobChestGUIScreen::new);
 		});
 	}
 }

@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class NoobPlanksBlock extends Block {
 	public NoobPlanksBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.7230475324955523f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.7230475325f).requiresCorrectToolForDrops());
 	}
 
 	@Override

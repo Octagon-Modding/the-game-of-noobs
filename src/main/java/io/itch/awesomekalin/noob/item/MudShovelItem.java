@@ -32,7 +32,7 @@ public class MudShovelItem extends ShovelItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 1, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
 	}

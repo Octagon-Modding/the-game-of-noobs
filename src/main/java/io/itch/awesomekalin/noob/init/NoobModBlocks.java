@@ -7,10 +7,6 @@ package io.itch.awesomekalin.noob.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -72,13 +68,4 @@ public class NoobModBlocks {
 	public static final RegistryObject<Block> DIRT_SAPLING = REGISTRY.register("dirt_sapling", () -> new DirtSaplingBlock());
 	public static final RegistryObject<Block> NOOB_COBBLESTONE = REGISTRY.register("noob_cobblestone", () -> new NoobCobblestoneBlock());
 	public static final RegistryObject<Block> NOOB_STONE = REGISTRY.register("noob_stone", () -> new NoobStoneBlock());
-
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-	public static class ClientSideHandler {
-		@SubscribeEvent
-		public static void clientSetup(FMLClientSetupEvent event) {
-			NoobDimPortalBlock.registerRenderLayer();
-			DirtSaplingBlock.registerRenderLayer();
-		}
-	}
 }

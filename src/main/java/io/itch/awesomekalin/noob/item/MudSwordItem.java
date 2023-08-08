@@ -35,7 +35,7 @@ public class MudSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 3, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
 	}

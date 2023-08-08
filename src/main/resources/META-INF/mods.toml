@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[43,)"
 license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
@@ -10,14 +10,12 @@ credits="Created using mod maker MCreator - https://mcreator.net/about. Noob ski
 displayURL="https://github.com/AwesomeKalin/the-game-of-noobs"
 updateJSONURL="https://update.awesomekalin.eu.org/noob.json"
 authors="AwesomeKalin55, AwesomeFootball 123"
-description='''
-The mod for noobs. DO NOT USE IF YOU ARE A PRO
-'''
+description="The mod for noobs. DO NOT USE IF YOU ARE A PRO"
 
 [[dependencies.noob]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
 

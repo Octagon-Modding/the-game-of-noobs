@@ -1,9 +1,6 @@
 
 package io.itch.awesomekalin.noob.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,19 +12,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 import io.itch.awesomekalin.noob.procedures.DirtSaplingUpdateTickProcedure;
 import io.itch.awesomekalin.noob.procedures.DirtSaplingPlantRightClickedProcedure;
-import io.itch.awesomekalin.noob.init.NoobModBlocks;
 
 public class DirtSaplingBlock extends FlowerBlock implements BonemealableBlock {
 	public DirtSaplingBlock() {
@@ -49,11 +43,11 @@ public class DirtSaplingBlock extends FlowerBlock implements BonemealableBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(this));
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		DirtSaplingUpdateTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
@@ -64,17 +58,12 @@ public class DirtSaplingBlock extends FlowerBlock implements BonemealableBlock {
 	}
 
 	@Override
-	public boolean isBonemealSuccess(Level world, Random random, BlockPos pos, BlockState blockstate) {
+	public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState blockstate) {
 		return true;
 	}
 
 	@Override
-	public void performBonemeal(ServerLevel world, Random random, BlockPos pos, BlockState blockstate) {
+	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
 		DirtSaplingPlantRightClickedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(NoobModBlocks.DIRT_SAPLING.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

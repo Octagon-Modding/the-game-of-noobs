@@ -15,7 +15,7 @@ import io.itch.awesomekalin.noob.block.entity.NoobChestBlockEntity;
 import io.itch.awesomekalin.noob.NoobMod;
 
 public class NoobModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, NoobMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, NoobMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> NOOB_CHEST = register("noob_chest", NoobModBlocks.NOOB_CHEST, NoobChestBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
