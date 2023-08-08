@@ -1193,6 +1193,46 @@
         ]
       },
       "path": "~/procedures"
+    },
+    {
+      "name": "NoobCobblestone",
+      "type": "block",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_cobblestone",
+      "path": "~/blocks/stone"
+    },
+    {
+      "name": "NoobStone",
+      "type": "block",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_stone",
+      "path": "~/blocks/stone"
+    },
+    {
+      "name": "StoneNoob",
+      "type": "loottable",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stone_noob",
+      "path": "~/blocks/stone"
+    },
+    {
+      "name": "NoobCobbleToStone",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "noob_cobble_to_stone",
+      "path": "~/blocks/stone"
     }
   ],
   "variable_elements": [
