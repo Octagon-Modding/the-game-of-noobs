@@ -18,6 +18,7 @@ import net.minecraft.block.Block;
 
 import java.util.Random;
 
+import io.itch.awesomekalin.noob.block.BlockNoobStone;
 import io.itch.awesomekalin.noob.block.BlockDirtLog;
 import io.itch.awesomekalin.noob.block.BlockDirtLeaves;
 import io.itch.awesomekalin.noob.ElementsNoobMod;
@@ -44,7 +45,7 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 					.setTemperature(0.5F));
 			setRegistryName("noobbio");
 			topBlock = Blocks.DIRT.getStateFromMeta(0);
-			fillerBlock = Blocks.DIRT.getStateFromMeta(0);
+			fillerBlock = BlockNoobStone.block.getDefaultState();
 			decorator.treesPerChunk = 4;
 			decorator.flowersPerChunk = 1;
 			decorator.grassPerChunk = 1;
@@ -117,12 +118,13 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 				} else {
 					Block ground = world.getBlockState(position.add(0, -1, 0)).getBlock();
 					Block ground2 = world.getBlockState(position.add(0, -2, 0)).getBlock();
-					if (!((ground == Blocks.DIRT.getStateFromMeta(0).getBlock() || ground == Blocks.DIRT.getStateFromMeta(0).getBlock())
-							&& (ground2 == Blocks.DIRT.getStateFromMeta(0).getBlock() || ground2 == Blocks.DIRT.getStateFromMeta(0).getBlock())))
+					if (!((ground == Blocks.DIRT.getStateFromMeta(0).getBlock() || ground == BlockNoobStone.block.getDefaultState().getBlock())
+							&& (ground2 == Blocks.DIRT.getStateFromMeta(0).getBlock()
+									|| ground2 == BlockNoobStone.block.getDefaultState().getBlock())))
 						return false;
 					IBlockState state = world.getBlockState(position.down());
 					if (position.getY() < world.getHeight() - height - 1) {
-						world.setBlockState(position.down(), Blocks.DIRT.getStateFromMeta(0), 2);
+						world.setBlockState(position.down(), BlockNoobStone.block.getDefaultState(), 2);
 						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
 							int i4 = genh - (position.getY() + height);
 							int j1 = (int) (1 - i4 * 0.5);
@@ -218,13 +220,13 @@ public class BiomeNoobBio extends ElementsNoobMod.ModElement {
 		protected boolean canGrowInto(Block blockType) {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == BlockDirtLog.block.getDefaultState().getBlock()
 					|| blockType == BlockDirtLeaves.block.getDefaultState().getBlock() || blockType == Blocks.DIRT.getStateFromMeta(0).getBlock()
-					|| blockType == Blocks.DIRT.getStateFromMeta(0).getBlock();
+					|| blockType == BlockNoobStone.block.getDefaultState().getBlock();
 		}
 
 		@Override
 		protected void setDirtAt(World world, BlockPos pos) {
-			if (world.getBlockState(pos).getBlock() != Blocks.DIRT.getStateFromMeta(0).getBlock())
-				this.setBlockAndNotifyAdequately(world, pos, Blocks.DIRT.getStateFromMeta(0));
+			if (world.getBlockState(pos).getBlock() != BlockNoobStone.block.getDefaultState().getBlock())
+				this.setBlockAndNotifyAdequately(world, pos, BlockNoobStone.block.getDefaultState());
 		}
 
 		@Override

@@ -2,6 +2,30 @@
   "variants": {
     "normal": {
       "model": "noob:noob_log"
+    },
+    "facing=south": {
+      "model": "noob:noob_log"
+    },
+    "facing=north": {
+      "model": "noob:noob_log"
+    },
+    "facing=east": {
+      "model": "noob:noob_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "noob:noob_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "noob:noob_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "noob:noob_log",
+      "x": 90,
+      "y": 90
     }
   }
 }

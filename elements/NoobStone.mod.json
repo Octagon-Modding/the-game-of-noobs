@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "noob_log_top",
-    "textureTop": "noob_log_top",
-    "textureLeft": "noob_log_side",
-    "textureFront": "noob_log_side",
-    "textureRight": "noob_log_side",
-    "textureBack": "noob_log_side",
+    "texture": "noob_stone",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,27 +32,27 @@
         "subtract": false
       }
     ],
-    "name": "Noob Log",
+    "name": "Noob Stone",
     "specialInfo": [],
     "hardness": 1.0,
-    "resistance": 1.1486983549970349,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:NoobTab"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:NoobCobblestone"
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "enchantPowerBonus": 0.0,
-    "plantsGrowOn": true,
+    "plantsGrowOn": false,
     "canProvidePower": false,
     "lightOpacity": 255,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -63,7 +63,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 3,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -72,11 +72,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "GROUND"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

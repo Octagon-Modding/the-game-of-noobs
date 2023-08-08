@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "noob:blocks/noob_sapling",
+    "particle": "noob:blocks/noob_sapling"
+  }
+}

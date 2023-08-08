@@ -7,7 +7,7 @@
       "value": "Blocks.DIRT#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:NoobStone"
     },
     "airColor": {
       "value": -5916161,
