@@ -107,6 +107,8 @@ public class NoobModItems {
 	public static final RegistryObject<Item> NOOB_WOOD_SHOVEL = REGISTRY.register("noob_wood_shovel", () -> new NoobWooShovelItem());
 	public static final RegistryObject<Item> NOOB_WOOD_HOE = REGISTRY.register("noob_wood_hoe", () -> new NoobWooHoeItem());
 	public static final RegistryObject<Item> DIRT_SAPLING = block(NoobModBlocks.DIRT_SAPLING, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_COBBLESTONE = block(NoobModBlocks.NOOB_COBBLESTONE, NoobModTabs.TAB_NOOB_TAB);
+	public static final RegistryObject<Item> NOOB_STONE = block(NoobModBlocks.NOOB_STONE, NoobModTabs.TAB_NOOB_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

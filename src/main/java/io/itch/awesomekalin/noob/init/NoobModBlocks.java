@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import io.itch.awesomekalin.noob.block.NoobWoodBlock;
+import io.itch.awesomekalin.noob.block.NoobStoneBlock;
 import io.itch.awesomekalin.noob.block.NoobStairsBlock;
 import io.itch.awesomekalin.noob.block.NoobSlabBlock;
 import io.itch.awesomekalin.noob.block.NoobPressurePlateBlock;
@@ -25,6 +26,7 @@ import io.itch.awesomekalin.noob.block.NoobLeavesBlock;
 import io.itch.awesomekalin.noob.block.NoobFenceGateBlock;
 import io.itch.awesomekalin.noob.block.NoobFenceBlock;
 import io.itch.awesomekalin.noob.block.NoobDimPortalBlock;
+import io.itch.awesomekalin.noob.block.NoobCobblestoneBlock;
 import io.itch.awesomekalin.noob.block.NoobChestBlock;
 import io.itch.awesomekalin.noob.block.NoobButtonBlock;
 import io.itch.awesomekalin.noob.block.NoobBlockBlock;
@@ -68,6 +70,8 @@ public class NoobModBlocks {
 	public static final RegistryObject<Block> NOOB_PRESSURE_PLATE = REGISTRY.register("noob_pressure_plate", () -> new NoobPressurePlateBlock());
 	public static final RegistryObject<Block> NOOB_BUTTON = REGISTRY.register("noob_button", () -> new NoobButtonBlock());
 	public static final RegistryObject<Block> DIRT_SAPLING = REGISTRY.register("dirt_sapling", () -> new DirtSaplingBlock());
+	public static final RegistryObject<Block> NOOB_COBBLESTONE = REGISTRY.register("noob_cobblestone", () -> new NoobCobblestoneBlock());
+	public static final RegistryObject<Block> NOOB_STONE = REGISTRY.register("noob_stone", () -> new NoobStoneBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

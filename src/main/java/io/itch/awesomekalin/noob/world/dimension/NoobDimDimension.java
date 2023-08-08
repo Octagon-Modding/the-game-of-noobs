@@ -18,6 +18,8 @@ import net.minecraft.client.renderer.DimensionSpecialEffects;
 import java.util.Set;
 import java.util.HashSet;
 
+import io.itch.awesomekalin.noob.init.NoobModBlocks;
+
 import com.google.common.collect.ImmutableSet;
 
 @Mod.EventBusSubscriber
@@ -29,7 +31,7 @@ public class NoobDimDimension {
 			Set<Block> replaceableBlocks = new HashSet<>();
 			replaceableBlocks.add(Blocks.DIRT);
 			replaceableBlocks.add(Blocks.DIRT);
-			replaceableBlocks.add(Blocks.DIRT);
+			replaceableBlocks.add(NoobModBlocks.NOOB_STONE.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks).addAll(replaceableBlocks).build();
 				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks).addAll(replaceableBlocks).build();

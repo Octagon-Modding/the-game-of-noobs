@@ -2992,7 +2992,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:dirt"
+                            "Name": "noob:noob_stone"
                           }
                         }
                       ]
@@ -3010,7 +3010,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "noob:noob_stone"
                       }
                     }
                   }
