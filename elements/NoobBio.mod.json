@@ -7,7 +7,7 @@
       "value": "Blocks.DIRT#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:NoobStone"
     },
     "airColor": {
       "value": -5916161,
@@ -102,19 +102,8 @@
       "Structures",
       "Ores",
       "Lakes",
-      "FrozenTopLayer",
       "FrozenTopLayer"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "CUSTOM:TheNoob"
-        },
-        "minGroup": 4,
-        "maxGroup": 10,
-        "weight": 100,
-        "spawnType": "creature"
-      }
-    ]
+    "spawnEntries": []
   }
 }
