@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "noob:blocks/noob_cobblestone",
+    "up": "noob:blocks/noob_cobblestone",
+    "north": "noob:blocks/noob_cobblestone",
+    "east": "noob:blocks/noob_cobblestone",
+    "south": "noob:blocks/noob_cobblestone",
+    "west": "noob:blocks/noob_cobblestone",
+    "particle": "noob:blocks/noob_cobblestone"
+  }
+}

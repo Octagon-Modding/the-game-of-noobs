@@ -40,8 +40,8 @@ import io.itch.awesomekalin.noob.NoobMod;
 import com.google.common.collect.ImmutableList;
 
 public class NoobBioBiome {
-	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT.configured(
-			new SurfaceBuilderBaseConfiguration(Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT.configured(new SurfaceBuilderBaseConfiguration(
+			Blocks.DIRT.defaultBlockState(), NoobModBlocks.NOOB_STONE.defaultBlockState(), NoobModBlocks.NOOB_STONE.defaultBlockState()));
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-5916161).waterColor(-14329397).waterFogColor(-14329397)

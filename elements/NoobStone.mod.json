@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 28,
   "_type": "block",
   "definition": {
     "texture": "noob_stone",
@@ -11,7 +11,6 @@
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
-    "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -48,7 +47,6 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": true,
-    "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,

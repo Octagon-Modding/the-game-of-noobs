@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 import io.itch.awesomekalin.noob.block.NoobWoodBlock;
+import io.itch.awesomekalin.noob.block.NoobStoneBlock;
 import io.itch.awesomekalin.noob.block.NoobStairsBlock;
 import io.itch.awesomekalin.noob.block.NoobSlabBlock;
 import io.itch.awesomekalin.noob.block.NoobPressurePlateBlock;
@@ -26,6 +27,7 @@ import io.itch.awesomekalin.noob.block.NoobLeavesBlock;
 import io.itch.awesomekalin.noob.block.NoobFenceGateBlock;
 import io.itch.awesomekalin.noob.block.NoobFenceBlock;
 import io.itch.awesomekalin.noob.block.NoobDimPortalBlock;
+import io.itch.awesomekalin.noob.block.NoobCobblestoneBlock;
 import io.itch.awesomekalin.noob.block.NoobChestBlock;
 import io.itch.awesomekalin.noob.block.NoobButtonBlock;
 import io.itch.awesomekalin.noob.block.NoobBlockBlock;
@@ -69,6 +71,8 @@ public class NoobModBlocks {
 	public static final Block NOOB_PRESSURE_PLATE = register(new NoobPressurePlateBlock());
 	public static final Block NOOB_BUTTON = register(new NoobButtonBlock());
 	public static final Block DIRT_SAPLING = register(new DirtSaplingBlock());
+	public static final Block NOOB_COBBLESTONE = register(new NoobCobblestoneBlock());
+	public static final Block NOOB_STONE = register(new NoobStoneBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
