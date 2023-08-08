@@ -1941,9 +1941,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.noob.noob_armor_leggings": "Noob Leggings",
-      "block.noob.noob_button": "Noob Button",
       "item.noob.noob_wood_sword": "Noob Wood Sword",
+      "block.noob.noob_button": "Noob Button",
+      "item.noob.noob_armor_leggings": "Noob Leggings",
       "block.noob.dirt_log": "Dirt Log",
       "item.noob.mudpickaxe": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
@@ -2058,6 +2058,10 @@
           },
           {
             "name": "noob_wood",
+            "children": []
+          },
+          {
+            "name": "stone",
             "children": []
           }
         ]
