@@ -1329,6 +1329,10 @@
           {
             "name": "noob_wood",
             "children": []
+          },
+          {
+            "name": "stone",
+            "children": []
           }
         ]
       },
