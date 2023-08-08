@@ -1193,6 +1193,42 @@
         ]
       },
       "path": "~/procedures"
+    },
+    {
+      "name": "NoobCobblestone",
+      "type": "block",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_cobblestone",
+      "path": "~/blocks/stone"
+    },
+    {
+      "name": "NoobStone",
+      "type": "block",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_stone",
+      "path": "~/blocks/stone"
+    },
+    {
+      "name": "StoneNoob",
+      "type": "loottable",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_noob",
+      "path": "~/blocks/stone"
+    },
+    {
+      "name": "NoobCobbleToStone",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "noob_cobble_to_stone",
+      "path": "~/blocks/stone"
     }
   ],
   "variable_elements": [
@@ -1212,9 +1248,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.noob.noob_button": "Noob Button",
-      "item.noob.noob_armor_leggings": "Noob Leggings",
       "item.noob.noob_wood_sword": "Noob Wood Sword",
+      "item.noob.noob_armor_leggings": "Noob Leggings",
+      "block.noob.noob_button": "Noob Button",
       "block.noob.dirt_log": "Dirt Log",
       "item.noob.mudpickaxe": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",

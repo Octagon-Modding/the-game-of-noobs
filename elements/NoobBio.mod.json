@@ -1,5 +1,5 @@
 {
-  "_fv": 28,
+  "_fv": 18,
   "_type": "biome",
   "definition": {
     "name": "Noob Bio",
@@ -7,10 +7,7 @@
       "value": "Blocks.DIRT#0"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
-    },
-    "underwaterBlock": {
-      "value": ""
+      "value": "CUSTOM:NoobStone"
     },
     "airColor": {
       "value": -5916161,
@@ -51,13 +48,15 @@
     },
     "particlesProbability": 0.0,
     "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "rainingPossibility": 1.0,
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
+    "biomeType": "WARM",
     "spawnBiome": false,
-    "spawnBiomeNether": false,
-    "spawnInCaves": false,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 1,
@@ -73,6 +72,7 @@
     "vanillaTreeType": "Default",
     "treeType": 1,
     "minHeight": 5,
+    "maxWaterDepth": 0,
     "treeStem": {
       "value": "CUSTOM:DirtLog"
     },
@@ -87,24 +87,15 @@
     },
     "spawnStronghold": true,
     "spawnMineshaft": true,
-    "spawnMineshaftMesa": false,
     "spawnPillagerOutpost": true,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
-    "spawnSwampHut": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
-    "spawnShipwreckBeached": false,
-    "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
-    "spawnNetherBridge": false,
-    "spawnNetherFossil": false,
-    "spawnBastionRemnant": false,
-    "spawnEndCity": false,
-    "spawnRuinedPortal": "NONE",
     "defaultFeatures": [
       "Caves",
       "MonsterRooms",
