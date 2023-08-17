@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "noob:blocks/noob_planks",
-    "particle": "noob:blocks/noob_planks"
+    "all": "noob:block/noob_planks",
+    "particle": "noob:block/noob_planks"
   },
   "render_type": "solid"
 }

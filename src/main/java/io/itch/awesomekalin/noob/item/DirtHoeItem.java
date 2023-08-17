@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 import io.itch.awesomekalin.noob.init.NoobModBlocks;
 
 public class DirtHoeItem extends HoeItem {
@@ -36,6 +35,6 @@ public class DirtHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(NoobModBlocks.DIRT_PLANKS.get()));
 			}
-		}, 0, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 0, -3f, new Item.Properties());
 	}
 }

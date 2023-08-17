@@ -1,6 +1,10 @@
+
 package io.itch.awesomekalin.noob.world.features.treedecorators;
 
+import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
@@ -12,14 +16,16 @@ import net.minecraft.core.BlockPos;
 
 import java.util.List;
 
+import com.mojang.serialization.Codec;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NoobBiomeFruitDecorator extends CocoaDecorator {
-	public static final NoobBiomeFruitDecorator INSTANCE = new NoobBiomeFruitDecorator();
-	public static com.mojang.serialization.Codec<NoobBiomeFruitDecorator> codec;
-	public static TreeDecoratorType<?> tdt;
-	static {
-		codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		tdt = new TreeDecoratorType<>(codec);
-		ForgeRegistries.TREE_DECORATOR_TYPES.register("noob_biome_tree_fruit_decorator", tdt);
+	public static Codec<NoobBiomeFruitDecorator> CODEC = Codec.unit(NoobBiomeFruitDecorator::new);
+	public static TreeDecoratorType<?> DECORATOR_TYPE = new TreeDecoratorType<>(CODEC);
+
+	@SubscribeEvent
+	public static void registerPointOfInterest(RegisterEvent event) {
+		event.register(ForgeRegistries.Keys.TREE_DECORATOR_TYPES, registerHelper -> registerHelper.register("noob_biome_tree_fruit_decorator", DECORATOR_TYPE));
 	}
 
 	public NoobBiomeFruitDecorator() {
@@ -28,7 +34,7 @@ public class NoobBiomeFruitDecorator extends CocoaDecorator {
 
 	@Override
 	protected TreeDecoratorType<?> type() {
-		return tdt;
+		return DECORATOR_TYPE;
 	}
 
 	@Override

@@ -1,8 +1,8 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "noob:blocks/dirt_sapling",
-    "particle": "noob:blocks/dirt_sapling"
+    "cross": "noob:block/dirt_sapling",
+    "particle": "noob:block/dirt_sapling"
   },
   "render_type": "cutout"
 }

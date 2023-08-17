@@ -9,7 +9,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
 import io.itch.awesomekalin.noob.procedures.MudAxeMobIsHitWithToolProcedure;
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 
 public class MudPickaxeItem extends PickaxeItem {
 	public MudPickaxeItem() {
@@ -37,7 +36,7 @@ public class MudPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 1, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 1, -3f, new Item.Properties());
 	}
 
 	@Override

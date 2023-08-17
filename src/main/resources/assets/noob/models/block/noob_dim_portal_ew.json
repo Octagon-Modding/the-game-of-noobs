@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "noob:blocks/nobb_portal_inside",
-    "portal": "noob:blocks/nobb_portal_inside"
+    "particle": "noob:block/nobb_portal_inside",
+    "portal": "noob:block/nobb_portal_inside"
   },
   "elements": [
     {

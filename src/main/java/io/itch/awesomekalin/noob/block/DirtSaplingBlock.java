@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
@@ -25,7 +26,7 @@ import io.itch.awesomekalin.noob.procedures.DirtSaplingPlantRightClickedProcedur
 
 public class DirtSaplingBlock extends FlowerBlock implements BonemealableBlock {
 	public DirtSaplingBlock() {
-		super(MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().noCollission());
+		super(() -> MobEffects.SATURATION, 0, BlockBehaviour.Properties.of(Material.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().noCollission());
 	}
 
 	@Override
@@ -53,7 +54,7 @@ public class DirtSaplingBlock extends FlowerBlock implements BonemealableBlock {
 	}
 
 	@Override
-	public boolean isValidBonemealTarget(BlockGetter worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
+	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
 		return true;
 	}
 

@@ -11,13 +11,10 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
 
 import io.itch.awesomekalin.noob.procedures.NoobFoodFoodEatenProcedure;
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 
 public class NoobFoodItem extends Item {
 	public NoobFoodItem() {
-		super(new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f)
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f).build()));
 	}
 
 	@Override
@@ -36,7 +33,6 @@ public class NoobFoodItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		NoobFoodFoodEatenProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}

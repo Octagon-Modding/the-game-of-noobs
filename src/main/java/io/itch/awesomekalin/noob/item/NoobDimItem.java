@@ -9,12 +9,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 import io.itch.awesomekalin.noob.block.NoobDimPortalBlock;
 
 public class NoobDimItem extends Item {
 	public NoobDimItem() {
-		super(new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB).durability(64));
+		super(new Item.Properties().durability(64));
 	}
 
 	@Override

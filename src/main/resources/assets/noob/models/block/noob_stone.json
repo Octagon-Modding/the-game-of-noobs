@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "noob:blocks/noob_stone",
-    "up": "noob:blocks/noob_stone",
-    "north": "noob:blocks/noob_stone",
-    "east": "noob:blocks/noob_stone",
-    "south": "noob:blocks/noob_stone",
-    "west": "noob:blocks/noob_stone",
-    "particle": "noob:blocks/noob_stone"
+    "down": "noob:block/noob_stone",
+    "up": "noob:block/noob_stone",
+    "north": "noob:block/noob_stone",
+    "east": "noob:block/noob_stone",
+    "south": "noob:block/noob_stone",
+    "west": "noob:block/noob_stone",
+    "particle": "noob:block/noob_stone"
   },
   "render_type": "solid"
 }

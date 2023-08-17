@@ -1,7 +1,7 @@
 {
   "parent": "block/template_fence_gate_open",
   "textures": {
-    "texture": "noob:blocks/dirt_planks"
+    "texture": "noob:block/dirt_planks"
   },
   "render_type": "solid"
 }

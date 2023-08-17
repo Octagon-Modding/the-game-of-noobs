@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "noob:blocks/noob_leaves",
-    "particle": "noob:blocks/noob_leaves"
+    "all": "noob:block/noob_leaves",
+    "particle": "noob:block/noob_leaves"
   }
 }

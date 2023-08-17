@@ -38,14 +38,12 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 import io.itch.awesomekalin.noob.init.NoobModMenus;
 import io.itch.awesomekalin.noob.init.NoobModItems;
 import io.itch.awesomekalin.noob.init.NoobModFeatures;
 import io.itch.awesomekalin.noob.init.NoobModEntities;
 import io.itch.awesomekalin.noob.init.NoobModBlocks;
 import io.itch.awesomekalin.noob.init.NoobModBlockEntities;
-import io.itch.awesomekalin.noob.init.NoobModBiomes;
 
 @Mod("noob")
 public class NoobMod {
@@ -54,17 +52,15 @@ public class NoobMod {
 
 	public NoobMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		NoobModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		NoobModBlocks.REGISTRY.register(bus);
 		NoobModItems.REGISTRY.register(bus);
 		NoobModEntities.REGISTRY.register(bus);
 		NoobModBlockEntities.REGISTRY.register(bus);
-		NoobModFeatures.REGISTRY.register(bus);
 
 		NoobModMenus.REGISTRY.register(bus);
-		NoobModBiomes.REGISTRY.register(bus);
+		NoobModFeatures.REGISTRY.register(bus);
 
 	}
 

@@ -13,11 +13,10 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 
 import io.itch.awesomekalin.noob.procedures.CreativeGauntletRightClickedProcedure;
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 
 public class CreativeGauntletItem extends Item {
 	public CreativeGauntletItem() {
-		super(new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB).stacksTo(1).rarity(Rarity.EPIC));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC));
 	}
 
 	@Override
@@ -32,7 +31,6 @@ public class CreativeGauntletItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		CreativeGauntletRightClickedProcedure.execute(world, entity);
 		return ar;
 	}

@@ -7,7 +7,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 import io.itch.awesomekalin.noob.init.NoobModBlocks;
 
 public class NoobWooAxeItem extends AxeItem {
@@ -36,6 +35,6 @@ public class NoobWooAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(NoobModBlocks.NOOB_PLANKS.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 1, -3f, new Item.Properties());
 	}
 }

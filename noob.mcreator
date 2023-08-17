@@ -8,13 +8,15 @@
       "locked_code": false,
       "metadata": {
         "files": [
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobChestBlock.java",
+          "src/main/resources/assets/noob/models/item/noob_chest.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/entity/NoobChestBlockEntity.java",
+          "src/main/resources/data/noob/worldgen/placed_feature/noob_chest.json",
+          "src/main/resources/data/noob/worldgen/configured_feature/noob_chest.json",
+          "src/main/java/io/itch/awesomekalin/noob/world/features/ores/NoobChestFeature.java",
           "src/main/resources/assets/noob/models/block/noob_chest.json",
           "src/main/resources/data/noob/forge/biome_modifier/noob_chest_biome_modifier.json",
-          "src/main/java/io/itch/awesomekalin/noob/world/features/ores/NoobChestFeature.java",
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobChestBlock.java",
-          "src/main/resources/assets/noob/blockstates/noob_chest.json",
-          "src/main/resources/assets/noob/models/item/noob_chest.json",
-          "src/main/java/io/itch/awesomekalin/noob/block/entity/NoobChestBlockEntity.java"
+          "src/main/resources/assets/noob/blockstates/noob_chest.json"
         ]
       },
       "path": "~/blocks/noob_chest"
@@ -27,8 +29,8 @@
       "locked_code": false,
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/world/inventory/NoobChestGUIMenu.java",
-          "src/main/java/io/itch/awesomekalin/noob/client/gui/NoobChestGUIScreen.java"
+          "src/main/java/io/itch/awesomekalin/noob/client/gui/NoobChestGUIScreen.java",
+          "src/main/java/io/itch/awesomekalin/noob/world/inventory/NoobChestGUIMenu.java"
         ]
       },
       "path": "~/blocks/noob_chest"
@@ -86,10 +88,12 @@
       "locked_code": false,
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/world/biome/NoobBioBiome.java",
+          "src/main/resources/data/noob/worldgen/configured_feature/noob_bio_tree.json",
           "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBioTrunkDecorator.java",
+          "src/main/resources/data/noob/worldgen/biome/noob_bio.json",
+          "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBioFruitDecorator.java",
           "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBioLeaveDecorator.java",
-          "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBioFruitDecorator.java"
+          "src/main/resources/data/noob/worldgen/placed_feature/noob_bio_tree.json"
         ]
       },
       "path": "~/dim"
@@ -103,17 +107,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/world/dimension/NoobDimDimension.java",
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobDimPortalBlock.java",
-          "src/main/resources/assets/noob/models/block/noob_dim_portal_ew.json",
-          "src/main/resources/data/noob/dimension/noob_dim.json",
-          "src/main/resources/assets/noob/models/block/noob_dim_portal_ns.json",
           "src/main/resources/data/noob/dimension_type/noob_dim.json",
-          "src/main/java/io/itch/awesomekalin/noob/world/teleporter/NoobDimTeleporter.java",
-          "src/main/resources/assets/noob/blockstates/noob_dim_portal.json",
+          "src/main/resources/assets/noob/models/block/noob_dim_portal_ew.json",
           "src/main/resources/assets/noob/models/item/noob_dim.json",
+          "src/main/java/io/itch/awesomekalin/noob/world/teleporter/NoobDimTeleporter.java",
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobDimItem.java",
           "src/main/java/io/itch/awesomekalin/noob/world/teleporter/NoobDimPortalShape.java",
-          "src/main/java/io/itch/awesomekalin/noob/item/NoobDimItem.java"
+          "src/main/java/io/itch/awesomekalin/noob/world/dimension/NoobDimDimension.java",
+          "src/main/resources/assets/noob/blockstates/noob_dim_portal.json",
+          "src/main/resources/assets/noob/models/block/noob_dim_portal_ns.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobDimPortalBlock.java",
+          "src/main/resources/data/noob/dimension/noob_dim.json"
         ]
       },
       "path": "~/dim"
@@ -211,8 +215,8 @@
       "locked_code": false,
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/item/MudSwordItem.java",
-          "src/main/resources/assets/noob/models/item/mud_sword.json"
+          "src/main/resources/assets/noob/models/item/mud_sword.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/MudSwordItem.java"
         ]
       },
       "path": "~/tools/mud"
@@ -308,11 +312,13 @@
       "metadata": {
         "files": [
           "src/main/resources/data/noob/forge/biome_modifier/noob_ore_biome_modifier.json",
+          "src/main/resources/assets/noob/blockstates/noob_ore.json",
           "src/main/resources/assets/noob/models/block/noob_ore.json",
+          "src/main/resources/data/noob/worldgen/placed_feature/noob_ore.json",
           "src/main/resources/assets/noob/models/item/noob_ore.json",
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobOreBlock.java",
           "src/main/java/io/itch/awesomekalin/noob/world/features/ores/NoobOreFeature.java",
-          "src/main/resources/assets/noob/blockstates/noob_ore.json"
+          "src/main/resources/data/noob/worldgen/configured_feature/noob_ore.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobOreBlock.java"
         ]
       },
       "path": "~/blocks/noob_ore"
@@ -326,10 +332,10 @@
       "registry_name": "noob_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/block/noob_block.json",
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobBlockBlock.java",
+          "src/main/resources/assets/noob/models/item/noob_block.json",
           "src/main/resources/assets/noob/blockstates/noob_block.json",
-          "src/main/resources/assets/noob/models/item/noob_block.json"
+          "src/main/resources/assets/noob/models/block/noob_block.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobBlockBlock.java"
         ]
       },
       "path": "~/blocks/noob_ore"
@@ -535,10 +541,10 @@
         "ec": true,
         "files": [
           "src/main/resources/assets/noob/models/item/noob_armor_boots.json",
-          "src/main/resources/assets/noob/models/item/noob_armor_helmet.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobArmorItem.java",
           "src/main/resources/assets/noob/models/item/noob_armor_chestplate.json",
-          "src/main/resources/assets/noob/models/item/noob_armor_leggings.json",
-          "src/main/java/io/itch/awesomekalin/noob/item/NoobArmorItem.java"
+          "src/main/resources/assets/noob/models/item/noob_armor_helmet.json",
+          "src/main/resources/assets/noob/models/item/noob_armor_leggings.json"
         ]
       },
       "path": "~/armour/noob"
@@ -608,8 +614,8 @@
       "registry_name": "mud_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/item/mud_shovel.json",
-          "src/main/java/io/itch/awesomekalin/noob/item/MudShovelItem.java"
+          "src/main/java/io/itch/awesomekalin/noob/item/MudShovelItem.java",
+          "src/main/resources/assets/noob/models/item/mud_shovel.json"
         ]
       },
       "path": "~/tools/mud"
@@ -623,8 +629,8 @@
       "registry_name": "mud_hoe",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/item/MudHoeItem.java",
-          "src/main/resources/assets/noob/models/item/mud_hoe.json"
+          "src/main/resources/assets/noob/models/item/mud_hoe.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/MudHoeItem.java"
         ]
       },
       "path": "~/tools/mud"
@@ -638,8 +644,8 @@
       "registry_name": "mud_shovel_top",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/item/mud_shovel_top.json",
-          "src/main/java/io/itch/awesomekalin/noob/item/MudShovelTopItem.java"
+          "src/main/java/io/itch/awesomekalin/noob/item/MudShovelTopItem.java",
+          "src/main/resources/assets/noob/models/item/mud_shovel_top.json"
         ]
       },
       "path": "~/tools/mud"
@@ -728,8 +734,8 @@
         "eb": true,
         "ec": true,
         "files": [
-          "src/main/resources/assets/noob/models/item/dirt_armour_armor_helmet.json",
           "src/main/resources/assets/noob/models/item/dirt_armour_armor_chestplate.json",
+          "src/main/resources/assets/noob/models/item/dirt_armour_armor_helmet.json",
           "src/main/resources/assets/noob/models/item/dirt_armour_armor_boots.json",
           "src/main/java/io/itch/awesomekalin/noob/item/DirtArmourArmorItem.java",
           "src/main/resources/assets/noob/models/item/dirt_armour_armor_leggings.json"
@@ -841,8 +847,8 @@
       "registry_name": "creative_gauntlet",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/item/CreativeGauntletItem.java",
-          "src/main/resources/assets/noob/models/item/creative_gauntlet.json"
+          "src/main/resources/assets/noob/models/item/creative_gauntlet.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/CreativeGauntletItem.java"
         ]
       },
       "path": "~/items"
@@ -870,10 +876,10 @@
       "registry_name": "the_noob",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/client/renderer/TheNoobRenderer.java",
-          "src/main/java/io/itch/awesomekalin/noob/entity/TheNoobEntity.java",
           "src/main/resources/data/noob/forge/biome_modifier/the_noob_biome_modifier.json",
-          "src/main/resources/assets/noob/models/item/the_noob_spawn_egg.json"
+          "src/main/java/io/itch/awesomekalin/noob/client/renderer/TheNoobRenderer.java",
+          "src/main/resources/assets/noob/models/item/the_noob_spawn_egg.json",
+          "src/main/java/io/itch/awesomekalin/noob/entity/TheNoobEntity.java"
         ]
       },
       "path": "~/entities"
@@ -887,8 +893,8 @@
       "registry_name": "noob_food",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/item/NoobFoodItem.java",
-          "src/main/resources/assets/noob/models/item/noob_food.json"
+          "src/main/resources/assets/noob/models/item/noob_food.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobFoodItem.java"
         ]
       },
       "path": "~/food"
@@ -902,10 +908,10 @@
       "registry_name": "dirt_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/item/dirt_wood.json",
           "src/main/java/io/itch/awesomekalin/noob/block/DirtWoodBlock.java",
+          "src/main/resources/assets/noob/models/block/dirt_wood.json",
           "src/main/resources/assets/noob/blockstates/dirt_wood.json",
-          "src/main/resources/assets/noob/models/block/dirt_wood.json"
+          "src/main/resources/assets/noob/models/item/dirt_wood.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -936,10 +942,10 @@
       "registry_name": "dirt_planks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/block/dirt_planks.json",
-          "src/main/resources/assets/noob/blockstates/dirt_planks.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/DirtPlanksBlock.java",
           "src/main/resources/assets/noob/models/item/dirt_planks.json",
-          "src/main/java/io/itch/awesomekalin/noob/block/DirtPlanksBlock.java"
+          "src/main/resources/assets/noob/blockstates/dirt_planks.json",
+          "src/main/resources/assets/noob/models/block/dirt_planks.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -953,10 +959,10 @@
       "registry_name": "dirt_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/block/dirt_leaves.json",
-          "src/main/resources/assets/noob/models/item/dirt_leaves.json",
+          "src/main/resources/assets/noob/blockstates/dirt_leaves.json",
           "src/main/java/io/itch/awesomekalin/noob/block/DirtLeavesBlock.java",
-          "src/main/resources/assets/noob/blockstates/dirt_leaves.json"
+          "src/main/resources/assets/noob/models/block/dirt_leaves.json",
+          "src/main/resources/assets/noob/models/item/dirt_leaves.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -970,12 +976,12 @@
       "registry_name": "dirt_stairs",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/block/DirtStairsBlock.java",
-          "src/main/resources/assets/noob/models/block/dirt_stairs.json",
-          "src/main/resources/assets/noob/models/block/dirt_stairs_inner.json",
           "src/main/resources/assets/noob/models/item/dirt_stairs.json",
+          "src/main/resources/assets/noob/blockstates/dirt_stairs.json",
+          "src/main/resources/assets/noob/models/block/dirt_stairs_inner.json",
+          "src/main/resources/assets/noob/models/block/dirt_stairs.json",
           "src/main/resources/assets/noob/models/block/dirt_stairs_outer.json",
-          "src/main/resources/assets/noob/blockstates/dirt_stairs.json"
+          "src/main/java/io/itch/awesomekalin/noob/block/DirtStairsBlock.java"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -989,12 +995,12 @@
       "registry_name": "dirt_slab",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/block/DirtSlabBlock.java",
           "src/main/resources/assets/noob/models/block/dirt_slab_top.json",
-          "src/main/resources/assets/noob/models/block/dirt_slab_full.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/DirtSlabBlock.java",
+          "src/main/resources/assets/noob/blockstates/dirt_slab.json",
           "src/main/resources/assets/noob/models/block/dirt_slab.json",
-          "src/main/resources/assets/noob/models/item/dirt_slab.json",
-          "src/main/resources/assets/noob/blockstates/dirt_slab.json"
+          "src/main/resources/assets/noob/models/block/dirt_slab_full.json",
+          "src/main/resources/assets/noob/models/item/dirt_slab.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -1009,11 +1015,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/noob/models/block/dirt_fence_post.json",
-          "src/main/resources/assets/noob/models/block/dirt_fence_inventory.json",
-          "src/main/resources/assets/noob/blockstates/dirt_fence.json",
           "src/main/java/io/itch/awesomekalin/noob/block/DirtFenceBlock.java",
+          "src/main/resources/assets/noob/models/item/dirt_fence.json",
+          "src/main/resources/assets/noob/blockstates/dirt_fence.json",
           "src/main/resources/assets/noob/models/block/dirt_fence.json",
-          "src/main/resources/assets/noob/models/item/dirt_fence.json"
+          "src/main/resources/assets/noob/models/block/dirt_fence_inventory.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -1028,12 +1034,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/noob/models/block/dirt_fence_gate.json",
-          "src/main/resources/assets/noob/models/block/dirt_fence_gate_open.json",
-          "src/main/resources/assets/noob/models/item/dirt_fence_gate.json",
           "src/main/resources/assets/noob/models/block/dirt_fence_gate_wall.json",
-          "src/main/resources/assets/noob/models/block/dirt_fence_gate_wall_open.json",
           "src/main/java/io/itch/awesomekalin/noob/block/DirtFenceGateBlock.java",
-          "src/main/resources/assets/noob/blockstates/dirt_fence_gate.json"
+          "src/main/resources/assets/noob/blockstates/dirt_fence_gate.json",
+          "src/main/resources/assets/noob/models/item/dirt_fence_gate.json",
+          "src/main/resources/assets/noob/models/block/dirt_fence_gate_wall_open.json",
+          "src/main/resources/assets/noob/models/block/dirt_fence_gate_open.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -1047,10 +1053,10 @@
       "registry_name": "dirt_pressure_plate",
       "metadata": {
         "files": [
+          "src/main/resources/assets/noob/models/block/dirt_pressure_plate.json",
           "src/main/resources/assets/noob/models/block/dirt_pressure_plate_down.json",
           "src/main/resources/assets/noob/models/item/dirt_pressure_plate.json",
           "src/main/resources/assets/noob/blockstates/dirt_pressure_plate.json",
-          "src/main/resources/assets/noob/models/block/dirt_pressure_plate.json",
           "src/main/java/io/itch/awesomekalin/noob/block/DirtPressurePlateBlock.java"
         ]
       },
@@ -1093,8 +1099,8 @@
       "registry_name": "noob_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/item/noob_wood.json",
           "src/main/resources/assets/noob/models/block/noob_wood.json",
+          "src/main/resources/assets/noob/models/item/noob_wood.json",
           "src/main/java/io/itch/awesomekalin/noob/block/NoobWoodBlock.java",
           "src/main/resources/assets/noob/blockstates/noob_wood.json"
         ]
@@ -1111,9 +1117,9 @@
       "metadata": {
         "files": [
           "src/main/java/io/itch/awesomekalin/noob/block/NoobLogBlock.java",
-          "src/main/resources/assets/noob/models/item/noob_log.json",
+          "src/main/resources/assets/noob/blockstates/noob_log.json",
           "src/main/resources/assets/noob/models/block/noob_log.json",
-          "src/main/resources/assets/noob/blockstates/noob_log.json"
+          "src/main/resources/assets/noob/models/item/noob_log.json"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1127,10 +1133,10 @@
       "registry_name": "noob_planks",
       "metadata": {
         "files": [
+          "src/main/resources/assets/noob/blockstates/noob_planks.json",
           "src/main/resources/assets/noob/models/block/noob_planks.json",
-          "src/main/resources/assets/noob/models/item/noob_planks.json",
           "src/main/java/io/itch/awesomekalin/noob/block/NoobPlanksBlock.java",
-          "src/main/resources/assets/noob/blockstates/noob_planks.json"
+          "src/main/resources/assets/noob/models/item/noob_planks.json"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1144,9 +1150,9 @@
       "registry_name": "noob_leaves",
       "metadata": {
         "files": [
+          "src/main/resources/assets/noob/models/item/noob_leaves.json",
           "src/main/resources/assets/noob/models/block/noob_leaves.json",
           "src/main/java/io/itch/awesomekalin/noob/block/NoobLeavesBlock.java",
-          "src/main/resources/assets/noob/models/item/noob_leaves.json",
           "src/main/resources/assets/noob/blockstates/noob_leaves.json"
         ]
       },
@@ -1161,12 +1167,12 @@
       "registry_name": "noob_stairs",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobStairsBlock.java",
-          "src/main/resources/assets/noob/blockstates/noob_stairs.json",
           "src/main/resources/assets/noob/models/block/noob_stairs.json",
-          "src/main/resources/assets/noob/models/block/noob_stairs_inner.json",
           "src/main/resources/assets/noob/models/item/noob_stairs.json",
-          "src/main/resources/assets/noob/models/block/noob_stairs_outer.json"
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobStairsBlock.java",
+          "src/main/resources/assets/noob/models/block/noob_stairs_outer.json",
+          "src/main/resources/assets/noob/blockstates/noob_stairs.json",
+          "src/main/resources/assets/noob/models/block/noob_stairs_inner.json"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1181,10 +1187,10 @@
       "metadata": {
         "files": [
           "src/main/java/io/itch/awesomekalin/noob/block/NoobSlabBlock.java",
-          "src/main/resources/assets/noob/models/block/noob_slab.json",
-          "src/main/resources/assets/noob/models/block/noob_slab_full.json",
           "src/main/resources/assets/noob/blockstates/noob_slab.json",
           "src/main/resources/assets/noob/models/block/noob_slab_top.json",
+          "src/main/resources/assets/noob/models/block/noob_slab.json",
+          "src/main/resources/assets/noob/models/block/noob_slab_full.json",
           "src/main/resources/assets/noob/models/item/noob_slab.json"
         ]
       },
@@ -1199,11 +1205,11 @@
       "registry_name": "noob_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/block/noob_fence_post.json",
-          "src/main/resources/assets/noob/models/block/noob_fence_inventory.json",
           "src/main/resources/assets/noob/blockstates/noob_fence.json",
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobFenceBlock.java",
           "src/main/resources/assets/noob/models/item/noob_fence.json",
+          "src/main/resources/assets/noob/models/block/noob_fence_inventory.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobFenceBlock.java",
+          "src/main/resources/assets/noob/models/block/noob_fence_post.json",
           "src/main/resources/assets/noob/models/block/noob_fence.json"
         ]
       },
@@ -1218,13 +1224,13 @@
       "registry_name": "noob_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/block/noob_fence_gate_wall_open.json",
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobFenceGateBlock.java",
+          "src/main/resources/assets/noob/models/block/noob_fence_gate.json",
           "src/main/resources/assets/noob/blockstates/noob_fence_gate.json",
-          "src/main/resources/assets/noob/models/block/noob_fence_gate_open.json",
           "src/main/resources/assets/noob/models/block/noob_fence_gate_wall.json",
+          "src/main/resources/assets/noob/models/block/noob_fence_gate_open.json",
+          "src/main/resources/assets/noob/models/block/noob_fence_gate_wall_open.json",
           "src/main/resources/assets/noob/models/item/noob_fence_gate.json",
-          "src/main/resources/assets/noob/models/block/noob_fence_gate.json"
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobFenceGateBlock.java"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1238,11 +1244,11 @@
       "registry_name": "noob_pressure_plate",
       "metadata": {
         "files": [
+          "src/main/resources/assets/noob/blockstates/noob_pressure_plate.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobPressurePlateBlock.java",
           "src/main/resources/assets/noob/models/item/noob_pressure_plate.json",
           "src/main/resources/assets/noob/models/block/noob_pressure_plate_down.json",
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobPressurePlateBlock.java",
-          "src/main/resources/assets/noob/models/block/noob_pressure_plate.json",
-          "src/main/resources/assets/noob/blockstates/noob_pressure_plate.json"
+          "src/main/resources/assets/noob/models/block/noob_pressure_plate.json"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1256,12 +1262,12 @@
       "registry_name": "noob_button",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/block/NoobButtonBlock.java",
           "src/main/resources/assets/noob/blockstates/noob_button.json",
-          "src/main/resources/assets/noob/models/block/noob_button_inventory.json",
-          "src/main/resources/assets/noob/models/block/noob_button_pressed.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/NoobButtonBlock.java",
           "src/main/resources/assets/noob/models/block/noob_button.json",
-          "src/main/resources/assets/noob/models/item/noob_button.json"
+          "src/main/resources/assets/noob/models/item/noob_button.json",
+          "src/main/resources/assets/noob/models/block/noob_button_pressed.json",
+          "src/main/resources/assets/noob/models/block/noob_button_inventory.json"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1415,11 +1421,11 @@
       "registry_name": "dirt_button",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/block/DirtButtonBlock.java",
-          "src/main/resources/assets/noob/models/item/dirt_button.json",
-          "src/main/resources/assets/noob/models/block/dirt_button_pressed.json",
-          "src/main/resources/assets/noob/blockstates/dirt_button.json",
           "src/main/resources/assets/noob/models/block/dirt_button_inventory.json",
+          "src/main/resources/assets/noob/models/block/dirt_button_pressed.json",
+          "src/main/resources/assets/noob/models/item/dirt_button.json",
+          "src/main/resources/assets/noob/blockstates/dirt_button.json",
+          "src/main/java/io/itch/awesomekalin/noob/block/DirtButtonBlock.java",
           "src/main/resources/assets/noob/models/block/dirt_button.json"
         ]
       },
@@ -1561,8 +1567,8 @@
       "registry_name": "dirt_wood_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/item/dirt_wood_axe.json",
-          "src/main/java/io/itch/awesomekalin/noob/item/DirtAxeItem.java"
+          "src/main/java/io/itch/awesomekalin/noob/item/DirtAxeItem.java",
+          "src/main/resources/assets/noob/models/item/dirt_wood_axe.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -1706,8 +1712,8 @@
       "registry_name": "noob_wood_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/item/noob_wood_axe.json",
-          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooAxeItem.java"
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooAxeItem.java",
+          "src/main/resources/assets/noob/models/item/noob_wood_axe.json"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1721,8 +1727,8 @@
       "registry_name": "noob_wood_sword",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooSwordItem.java",
-          "src/main/resources/assets/noob/models/item/noob_wood_sword.json"
+          "src/main/resources/assets/noob/models/item/noob_wood_sword.json",
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooSwordItem.java"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1751,8 +1757,8 @@
       "registry_name": "noob_wood_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/models/item/noob_wood_hoe.json",
-          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooHoeItem.java"
+          "src/main/java/io/itch/awesomekalin/noob/item/NoobWooHoeItem.java",
+          "src/main/resources/assets/noob/models/item/noob_wood_hoe.json"
         ]
       },
       "path": "~/blocks/noob_wood"
@@ -1836,10 +1842,12 @@
       "registry_name": "noob_biome",
       "metadata": {
         "files": [
-          "src/main/java/io/itch/awesomekalin/noob/world/biome/NoobBiomeBiome.java",
+          "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBiomeFruitDecorator.java",
           "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBiomeLeaveDecorator.java",
           "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBiomeTrunkDecorator.java",
-          "src/main/java/io/itch/awesomekalin/noob/world/features/treedecorators/NoobBiomeFruitDecorator.java"
+          "src/main/resources/data/noob/worldgen/biome/noob_biome.json",
+          "src/main/resources/data/noob/worldgen/placed_feature/noob_biome_tree.json",
+          "src/main/resources/data/noob/worldgen/configured_feature/noob_biome_tree.json"
         ]
       },
       "path": "~/biomes"
@@ -1853,12 +1861,14 @@
       "registry_name": "dirt_sapling",
       "metadata": {
         "files": [
+          "src/main/resources/data/noob/worldgen/configured_feature/dirt_sapling.json",
+          "src/main/resources/data/noob/worldgen/placed_feature/dirt_sapling.json",
+          "src/main/resources/assets/noob/models/item/dirt_sapling.json",
           "src/main/java/io/itch/awesomekalin/noob/block/DirtSaplingBlock.java",
-          "src/main/resources/data/noob/forge/biome_modifier/dirt_sapling_biome_modifier.json",
-          "src/main/resources/assets/noob/blockstates/dirt_sapling.json",
           "src/main/resources/assets/noob/models/block/dirt_sapling.json",
+          "src/main/resources/data/noob/forge/biome_modifier/dirt_sapling_biome_modifier.json",
           "src/main/java/io/itch/awesomekalin/noob/world/features/plants/DirtSaplingFeature.java",
-          "src/main/resources/assets/noob/models/item/dirt_sapling.json"
+          "src/main/resources/assets/noob/blockstates/dirt_sapling.json"
         ]
       },
       "path": "~/blocks/dirt_wood"
@@ -1936,10 +1946,10 @@
       "registry_name": "noob_cobblestone",
       "metadata": {
         "files": [
-          "src/main/resources/assets/noob/blockstates/noob_cobblestone.json",
-          "src/main/resources/assets/noob/models/block/noob_cobblestone.json",
           "src/main/java/io/itch/awesomekalin/noob/block/NoobCobblestoneBlock.java",
-          "src/main/resources/assets/noob/models/item/noob_cobblestone.json"
+          "src/main/resources/assets/noob/models/block/noob_cobblestone.json",
+          "src/main/resources/assets/noob/models/item/noob_cobblestone.json",
+          "src/main/resources/assets/noob/blockstates/noob_cobblestone.json"
         ]
       },
       "path": "~/blocks/stone"
@@ -1953,10 +1963,10 @@
       "registry_name": "noob_stone",
       "metadata": {
         "files": [
+          "src/main/resources/assets/noob/models/item/noob_stone.json",
           "src/main/java/io/itch/awesomekalin/noob/block/NoobStoneBlock.java",
           "src/main/resources/assets/noob/blockstates/noob_stone.json",
-          "src/main/resources/assets/noob/models/block/noob_stone.json",
-          "src/main/resources/assets/noob/models/item/noob_stone.json"
+          "src/main/resources/assets/noob/models/block/noob_stone.json"
         ]
       },
       "path": "~/blocks/stone"
@@ -2010,13 +2020,14 @@
       "item.noob.noob_armor_leggings": "Noob Leggings",
       "item.noob.mudpickaxe": "Mud Pickaxe",
       "item.noob.dirt_armour_armor_leggings": "DirtArmour Leggings",
-      "itemGroup.tabnoobtab": "The Game of Noobs",
       "block.noob.dirt_fence": "Dirt Fence",
+      "itemGroup.tabnoobtab": "The Game of Noobs",
       "block.noob.noob_pressure_plate": "Noob Pressure Plate",
       "item.noob.noob_wood_hoe": "Noob Wood Hoe",
       "block.noob.dirt_sapling": "Dirt Sapling",
-      "block.noob.dirt_fence_gate": "Dirt Fence Gate",
       "item.mudpickaxe.name": "Mud Pickaxe",
+      "block.noob.dirt_fence_gate": "Dirt Fence Gate",
+      "item_group.noob.noob_tab": "The Game of Noobs",
       "item.noob.mudaxe": "Mud Axe",
       "item.noob.saliva": "Saliva",
       "block.noob.dirt_stairs": "Dirt Stairs",
@@ -2201,7 +2212,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.19.2",
+    "currentGenerator": "forge-1.19.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about. Noob skin from https://www.minecraftskins.com/skin/20735075/noob/",
     "modElementsPackage": "io.itch.awesomekalin.noob",
     "lockBaseModFiles": false

@@ -3,6 +3,7 @@ package io.itch.awesomekalin.noob.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -17,7 +18,7 @@ import java.util.Collections;
 
 public class NoobFenceGateBlock extends FenceGateBlock {
 	public NoobFenceGateBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.5f).dynamicShape());
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.5f).dynamicShape(), WoodType.OAK);
 	}
 
 	@Override

@@ -7,7 +7,6 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 import io.itch.awesomekalin.noob.init.NoobModItems;
 
 public class NoobPickaxeItem extends PickaxeItem {
@@ -36,6 +35,6 @@ public class NoobPickaxeItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(NoobModItems.NOOB_DUST.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 1, -3f, new Item.Properties());
 	}
 }

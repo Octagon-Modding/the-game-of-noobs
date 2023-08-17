@@ -6,8 +6,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.Item;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
-
 public class MudShovelItem extends ShovelItem {
 	public MudShovelItem() {
 		super(new Tier() {
@@ -34,6 +32,6 @@ public class MudShovelItem extends ShovelItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 1, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 1, -3f, new Item.Properties());
 	}
 }

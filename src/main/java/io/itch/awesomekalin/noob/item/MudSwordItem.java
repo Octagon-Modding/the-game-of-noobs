@@ -9,7 +9,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
 import io.itch.awesomekalin.noob.procedures.MudAxeMobIsHitWithToolProcedure;
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 
 public class MudSwordItem extends SwordItem {
 	public MudSwordItem() {
@@ -37,7 +36,7 @@ public class MudSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 3, -3f, new Item.Properties());
 	}
 
 	@Override

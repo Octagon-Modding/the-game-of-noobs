@@ -1,7 +1,7 @@
 {
   "parent": "block/pressure_plate_up",
   "textures": {
-    "texture": "noob:blocks/dirt_planks"
+    "texture": "noob:block/dirt_planks"
   },
   "render_type": "solid"
 }

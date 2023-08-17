@@ -6,8 +6,6 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.HoeItem;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
-
 public class MudHoeItem extends HoeItem {
 	public MudHoeItem() {
 		super(new Tier() {
@@ -34,6 +32,6 @@ public class MudHoeItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 0, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 0, -3f, new Item.Properties());
 	}
 }

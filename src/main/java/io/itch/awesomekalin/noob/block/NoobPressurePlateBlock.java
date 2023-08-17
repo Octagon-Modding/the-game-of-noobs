@@ -3,6 +3,7 @@ package io.itch.awesomekalin.noob.block;
 
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -17,7 +18,7 @@ import java.util.Collections;
 
 public class NoobPressurePlateBlock extends PressurePlateBlock {
 	public NoobPressurePlateBlock() {
-		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.5f).dynamicShape());
+		super(Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 1.5f).dynamicShape(), BlockSetType.OAK);
 	}
 
 	@Override

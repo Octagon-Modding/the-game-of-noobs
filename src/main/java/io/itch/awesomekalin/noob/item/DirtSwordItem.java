@@ -7,7 +7,6 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 import io.itch.awesomekalin.noob.init.NoobModBlocks;
 
 public class DirtSwordItem extends SwordItem {
@@ -36,6 +35,6 @@ public class DirtSwordItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(NoobModBlocks.DIRT_PLANKS.get()));
 			}
-		}, 3, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 3, -3f, new Item.Properties());
 	}
 }

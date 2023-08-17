@@ -1,9 +1,9 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "bottom": "noob:blocks/dirt_planks",
-    "top": "noob:blocks/dirt_planks",
-    "side": "noob:blocks/dirt_planks"
+    "bottom": "noob:block/dirt_planks",
+    "top": "noob:block/dirt_planks",
+    "side": "noob:block/dirt_planks"
   },
   "render_type": "solid"
 }

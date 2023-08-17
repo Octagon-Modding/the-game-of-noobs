@@ -1,8 +1,8 @@
 {
   "parent": "block/fence_post",
   "textures": {
-    "texture": "noob:blocks/noob_planks",
-    "particle": "noob:blocks/noob_planks"
+    "texture": "noob:block/noob_planks",
+    "particle": "noob:block/noob_planks"
   },
   "render_type": "solid"
 }

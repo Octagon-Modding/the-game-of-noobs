@@ -12,7 +12,7 @@ public class MudAxeMobIsHitWithToolProcedure {
 		if (entity == null)
 			return;
 		entity.setCustomName(Component.literal("Noobed"));
-		(itemstack).setHoverName(Component.literal("HOW DARE YOU!"));
+		itemstack.setHoverName(Component.literal("HOW DARE YOU!"));
 		{
 			Entity _ent = entity;
 			if (!_ent.level.isClientSide() && _ent.getServer() != null) {

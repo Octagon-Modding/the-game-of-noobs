@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "noob:blocks/dirt_log_side",
-    "particle": "noob:blocks/dirt_log_side"
+    "all": "noob:block/dirt_log_side",
+    "particle": "noob:block/dirt_log_side"
   },
   "render_type": "solid"
 }

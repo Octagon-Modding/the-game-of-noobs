@@ -7,7 +7,6 @@ import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
-import io.itch.awesomekalin.noob.init.NoobModTabs;
 import io.itch.awesomekalin.noob.init.NoobModBlocks;
 
 public class DirtShovelItem extends ShovelItem {
@@ -36,6 +35,6 @@ public class DirtShovelItem extends ShovelItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(NoobModBlocks.DIRT_PLANKS.get()));
 			}
-		}, 1, -3f, new Item.Properties().tab(NoobModTabs.TAB_NOOB_TAB));
+		}, 1, -3f, new Item.Properties());
 	}
 }

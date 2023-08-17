@@ -1,7 +1,7 @@
 {
   "parent": "block/button",
   "textures": {
-    "texture": "noob:blocks/dirt_planks"
+    "texture": "noob:block/dirt_planks"
   },
   "render_type": "solid"
 }
